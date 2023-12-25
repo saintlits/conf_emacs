@@ -1,0 +1,11 @@
+ls
+ls
+ge
+ls
+ls
+ge emacs和vim你选哪个
+cd .emacs.d
+ls
+git init
+git add .
+vim gitigon
