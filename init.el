@@ -11,33 +11,7 @@
 
 ;; 设置Emacs窗口大小
 (add-to-list 'default-frame-alist '(width . 85))   ; 设置宽度为80列
-(add-to-list 'default-frame-alist '(height . 40))  ; 设置高度为40行
-
-;; 打开一个Shell窗口
-(defun open-shell ()
-  "Open a shell window."
-  (interactive)
-  (split-window-below)  ; 在下方创建一个新窗口
-  (other-window 1)      ; 切换到新窗口
-  (eshell)
-  (enlarge-window -10))             ; 打开eshell
-
-;; 定义史莱姆
-(defun my-start-common-lisp-environment ()
-  "Start a Common Lisp environment in a new window."
-  (interactive)
-  (split-window-right)               ; 水平分割窗口
-  (other-window 1)                   ; 切换到右侧窗口
-  (eshell)                           ; 打开 Shell 窗口
-  (other-window 1)                   ; 切换回左侧窗口
-  (inferior-lisp "allegro"))
-  ;(run-lisp "allegro"))                           ; 启动 SLIME
-
-(global-set-key (kbd "C-c C-z") 'my-start-common-lisp-environment)
-
-
-;; 在启动时打开Shell窗口
-(add-hook 'emacs-startup-hook 'open-shell)
+(add-to-list 'default-frame-alist '(height . 35))  ; 设置高度为40行
 
 ;; 启用'use-package'库
 (require 'package)
@@ -54,6 +28,17 @@
   :ensure t
   :mode ("\\.md\\'" . markdown-mode)
   :hook (markdown-mode . auto-revert-mode))
+;; 安装Org模式
+;;(use-package org
+;;  :ensure t
+;;  :hook (org-mode . auto-revert-mode))
+
+
+;; 启用slime
+(use-package slime
+  :ensure t
+  :config
+  (setq inferior-lisp-program "sbcl"))
 
 
 ;; 启用重载
@@ -172,3 +157,87 @@
   (setq nyan-animation-frame-interval 0.3)
   (setq nyan-wavy-trail t)
   (nyan-mode))
+
+;; 打开一个Shell窗口
+(defun open-shell ()
+  "Open a shell window."
+  (interactive)
+  (split-window-below)  ; 在下方创建一个新窗口
+  (other-window 1)      ; 切换到新窗口
+  (setq eshell-banner-message "")
+  (eshell)
+  (enlarge-window -10))             ; 打开eshell
+
+;; 定义史莱姆
+(defun my-start-common-lisp-environment ()
+  "Start a Common Lisp environment in a new window."
+  (interactive)
+  (split-window-right)               ; 水平分割窗口
+  (other-window 1)                   ; 切换到右侧窗口
+  ;;(other-window 1)                   ; 切换回左侧窗口
+  (inferior-lisp "sbcl"))
+
+(global-set-key (kbd "C-c C-z") 'my-start-common-lisp-environment)
+
+
+;; 在启动时打开Shell窗口
+(add-hook 'emacs-startup-hook 'open-shell)
+;;(add-hook 'emacs-startup-hook 'my-start-common-lisp-environment)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ignored-local-variable-values '((TeX-master . t)))
+ '(org-capture-templates
+   '(("C-i" "Todo" entry
+      (file+headline "~/ywq_doc/org/inbox.org" "Tasks")
+      "* TODO %?
+  %i
+  %a" :prepend t :immediate-finish t :jump-to-captured t :empty-lines 1 :empty-lines-before 1 :clock-in t :clock-keep t :clock-resume t :time-prompt t :tree-type week))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;; 20231226 new plugins test
+;; org-roam
+(use-package org-roam
+  :ensure t
+  :init
+  (setq org-roam-v2-ack t) ;; 如果你使用 v2 版本，请设置这个选项
+  :custom
+  (org-roam-directory "~/ywq_doc/org")
+  :bind (("C-c n f" . org-roam-node-find)
+         ("C-c n g" . org-roam-graph)
+         ("C-c n i" . org-roam-node-insert)
+         ("C-c n n" . org-roam-capture)
+         ("C-c n t" . org-roam-dailies-capture-today)
+         ("C-c n y" . org-roam-dailies-capture-yesterday)
+         ;; Add more keybindings as needed
+         )
+  :config
+  (org-roam-setup))
+
+;; org-roam-ui
+(use-package org-roam-ui
+  :straight
+    (:host github :repo "org-roam/org-roam-ui" :branch "main" :files ("*.el" "out"))
+    :after org-roam
+;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
+;;         a hookable mode anymore, you're advised to pick something yourself
+;;         if you don't care about startup time, use
+;;  :hook (after-init . org-roam-ui-mode)
+    :bind (("C-c n d" . org-roam-ui-mode))
+    :config
+    (setq org-roam-ui-sync-theme t
+          org-roam-ui-follow t
+          org-roam-ui-update-on-save t
+          org-roam-ui-open-on-start t))
