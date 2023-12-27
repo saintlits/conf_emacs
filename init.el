@@ -222,7 +222,13 @@
   :init
   (setq org-roam-v2-ack t) ;; 如果你使用 v2 版本，请设置这个选项
   :custom
-  (org-roam-directory "~/ywq_doc/org")
+  (org-roam-directory "~/ywq_doc/")
+  (org-roam-dailies-directory "journals/")
+  (org-roam-capture-templates
+   '(("d" "default" plain
+      "%?" :target
+      (file+head "pages/${slug}.org" "#+title: ${title}\n")
+      :unnarrowed t)))
   :bind (("C-c n f" . org-roam-node-find)
          ("C-c n g" . org-roam-graph)
          ("C-c n i" . org-roam-node-insert)
@@ -236,6 +242,8 @@
 
 ;; org-roam-ui
 (use-package org-roam-ui
+  :ensure t     
+  :defer t
   :straight
     (:host github :repo "org-roam/org-roam-ui" :branch "main" :files ("*.el" "out"))
     :after org-roam
@@ -249,3 +257,15 @@
           org-roam-ui-follow t
           org-roam-ui-update-on-save t
           org-roam-ui-open-on-start t))
+
+;; multiple cursors
+(use-package multiple-cursors
+	     :ensure t
+	     :init 
+	     (global-set-key (kbd "C->") 'mc/mark-next-like-this)
+	     (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+	     (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+	     (global-set-key (kbd "C-c m") 'mc/edit-lines)
+	     :config
+	     )
+
