@@ -3,7 +3,7 @@
 
 "28.2.50"
 
-#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ("2023-12-26 01:25:14" ("emacs") (:type git :host github :repo "radian-software/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "org-elpa" ("2023-12-26 01:25:14" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2023-12-26 01:25:14" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2023-12-26 01:25:14" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "nongnu-elpa" ("2023-12-26 01:25:14" nil (:type git :repo "https://git.savannah.gnu.org/git/emacs/nongnu.git" :depth (full single-branch) :local-repo "nongnu-elpa" :build nil :package "nongnu-elpa")) "el-get" ("2023-12-26 01:25:14" nil (:type git :host github :repo "dimitri/el-get" :build nil :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :flavor melpa :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2023-12-26 01:25:14" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "use-package" ("2023-12-26 01:25:14" ("emacs" "bind-key") (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "bind-key" ("2023-12-26 01:25:14" ("emacs") (:flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :package "bind-key" :local-repo "use-package" :type git :repo "jwiegley/use-package" :host github)) "evil" ("2023-12-26 01:25:14" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2023-12-26 01:25:14" ("emacs") (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "doom-themes" ("2023-12-26 01:25:14" ("emacs" "cl-lib") (:type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes" :package "doom-themes" :local-repo "themes")) "doom-modeline" ("2023-12-26 01:25:14" ("emacs" "compat" "nerd-icons" "shrink-path") (:type git :flavor melpa :host github :repo "seagle0128/doom-modeline" :package "doom-modeline" :local-repo "doom-modeline")) "compat" ("2023-12-26 01:25:14" ("emacs" "seq") (:type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git")) :package "compat" :local-repo "compat")) "seq" ("2023-12-26 01:25:14" nil (:type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git")) :package "seq" :local-repo "seq")) "nerd-icons" ("2023-12-26 01:25:14" ("emacs") (:type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el" :package "nerd-icons" :local-repo "nerd-icons.el")) "shrink-path" ("2023-12-26 01:25:14" ("emacs" "s" "dash" "f") (:type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el" :package "shrink-path" :local-repo "shrink-path.el")) "s" ("2023-12-26 01:25:14" nil (:type git :flavor melpa :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "dash" ("2023-12-26 01:25:14" ("emacs") (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "f" ("2023-12-26 01:25:14" ("emacs" "s" "dash") (:type git :flavor melpa :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "nyan-mode" ("2023-12-26 01:25:14" ("emacs") (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode"))))
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ("2023-12-27 19:49:43" ("emacs") (:type git :host github :repo "radian-software/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "org-elpa" ("2023-12-27 19:49:43" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2023-12-27 19:49:43" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2023-12-27 19:49:43" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "nongnu-elpa" ("2023-12-27 19:49:43" nil (:type git :repo "https://git.savannah.gnu.org/git/emacs/nongnu.git" :depth (full single-branch) :local-repo "nongnu-elpa" :build nil :package "nongnu-elpa")) "el-get" ("2023-12-27 19:49:43" nil (:type git :host github :repo "dimitri/el-get" :build nil :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :flavor melpa :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2023-12-27 19:49:43" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "use-package" ("2023-12-27 19:49:43" ("emacs" "bind-key") (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "bind-key" ("2023-12-27 19:49:43" ("emacs") (:flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :package "bind-key" :local-repo "use-package" :type git :repo "jwiegley/use-package" :host github)) "evil" ("2023-12-27 19:49:43" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2023-12-27 19:49:43" ("emacs") (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "doom-themes" ("2023-12-27 19:49:43" ("emacs" "cl-lib") (:type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes" :package "doom-themes" :local-repo "themes")) "doom-modeline" ("2023-12-27 19:49:43" ("emacs" "compat" "nerd-icons" "shrink-path") (:type git :flavor melpa :host github :repo "seagle0128/doom-modeline" :package "doom-modeline" :local-repo "doom-modeline")) "compat" ("2023-12-27 19:49:43" ("emacs" "seq") (:type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git")) :package "compat" :local-repo "compat")) "seq" ("2023-12-27 19:49:43" nil (:type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git")) :package "seq" :local-repo "seq")) "nerd-icons" ("2023-12-27 19:49:43" ("emacs") (:type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el" :package "nerd-icons" :local-repo "nerd-icons.el")) "shrink-path" ("2023-12-27 19:49:43" ("emacs" "s" "dash" "f") (:type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el" :package "shrink-path" :local-repo "shrink-path.el")) "s" ("2023-12-27 19:49:43" nil (:type git :flavor melpa :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "dash" ("2023-12-27 19:49:43" ("emacs") (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "f" ("2023-12-27 19:49:43" ("emacs" "s" "dash") (:type git :flavor melpa :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "nyan-mode" ("2023-12-27 19:49:43" ("emacs") (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "org-roam" ("2023-12-27 19:49:43" ("emacs" "dash" "org" "emacsql" "magit-section") (:type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam" :package "org-roam" :local-repo "org-roam")) "org" ("2023-12-27 19:49:43" ("emacs") (:type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*")) :package "org")) "emacsql" ("2023-12-27 19:49:43" ("emacs") (:type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql" :package "emacsql" :local-repo "emacsql")) "magit-section" ("2023-12-27 19:49:43" ("emacs" "compat" "dash") (:type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit" :package "magit-section" :local-repo "magit")) "org-roam-ui" ("2023-12-27 19:49:43" ("emacs" "org-roam" "simple-httpd" "websocket") (:host github :repo "org-roam/org-roam-ui" :branch "main" :files ("*.el" "out") :flavor melpa :package "org-roam-ui" :type git :local-repo "org-roam-ui")) "simple-httpd" ("2023-12-27 19:49:43" ("cl-lib") (:type git :flavor melpa :host github :repo "skeeto/emacs-web-server" :package "simple-httpd" :local-repo "emacs-web-server")) "websocket" ("2023-12-27 19:49:43" ("cl-lib") (:type git :flavor melpa :host github :repo "ahyatt/emacs-websocket" :package "websocket" :local-repo "emacs-websocket")) "auctex" ("2023-12-27 19:49:43" ("emacs") (:type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git")) :package "auctex" :local-repo "auctex"))))
 
 #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-x straight-ert-print-hack straight-autoloads straight) (autoload 'straight-remove-unused-repos "straight" "Remove unused repositories from the repos and build directories.
 A repo is considered \"unused\" if it was not explicitly requested via
@@ -661,10 +661,377 @@ it is disabled.
 Note: If you turn this mode on then you probably want to turn off
 option `scroll-bar-mode'.
 
-(fn &optional ARG)" t nil) (register-definition-prefixes "nyan-mode" '("nyan-")) (provide 'nyan-mode-autoloads))))
+(fn &optional ARG)" t nil) (register-definition-prefixes "nyan-mode" '("nyan-")) (provide 'nyan-mode-autoloads)) "org" ((ob-fortran ol-bibtex ob-ocaml ob-C ob-makefile ob-comint org org-loaddefs ob-latex ob-lisp ob-python org-datetree ob-ref org-agenda ob-processing org-table ol-man ol-docview org-fold ob-haskell org-id ox-md ob-exp ob-lob ob-tangle ox-odt org-macro org-plot org-colview ol-rmail org-faces ol-mhe ob-scheme ob-emacs-lisp ob-octave ob-matlab ob-java ox-beamer ol-eww org-num org-entities org-tempo org-refile ob-core org-capture ob-table ob-org ob-sqlite org-crypt oc-biblatex ob-eshell ol-w3m ol ox-org ol-irc ox-icalendar org-lint ob-julia ob-forth ob-sass ox-texinfo org-cycle org-persist org-attach ob-plantuml ob-eval ob-sed oc-bibtex ob-lilypond ob-perl ox-koma-letter org-list org-indent org-attach-git org-clock ob-js ox-ascii ob-clojure org-version org-mouse ob-ruby ob org-fold-core ol-bbdb org-footnote ox ox-publish oc-csl ol-doi ob-R oc ox-latex ox-man org-duration oc-natbib ol-info ol-gnus ob-groovy org-macs org-pcomplete ob-screen ox-html ob-lua ol-eshell ob-maxima org-mobile ob-ditaa ob-dot org-habit org-element-ast org-ctags org-goto org-protocol ob-shell org-archive ob-awk org-timer org-feed org-keys ob-calc org-element ob-sql ob-gnuplot oc-basic org-compat org-src org-inlinetask ob-css)) "emacsql" ((emacsql-mysql emacsql emacsql-psql emacsql-compiler emacsql-sqlite-common emacsql-autoloads emacsql-sqlite-builtin emacsql-sqlite emacsql-sqlite-module emacsql-pg) (autoload 'emacsql-show-last-sql "emacsql" "Display the compiled SQL of the s-expression SQL expression before point.
+A prefix argument causes the SQL to be printed into the current buffer.
 
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 15 "melpa" nil "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "use-package" nil "bind-key" nil "evil" nil "goto-chg" nil "cl-lib" nil "doom-themes" nil "doom-modeline" nil "compat" nil "seq" nil "nerd-icons" nil "shrink-path" nil "s" nil "dash" nil "f" nil "nyan-mode" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" (el-get :type git :flavor melpa :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "bind-key" (bind-key :type git :flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :host github :repo "jwiegley/use-package") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "cl-lib" nil "doom-themes" (doom-themes :type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes") "doom-modeline" (doom-modeline :type git :flavor melpa :host github :repo "seagle0128/doom-modeline") "compat" nil "seq" nil "nerd-icons" (nerd-icons :type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el") "shrink-path" (shrink-path :type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el") "s" (s :type git :flavor melpa :host github :repo "magnars/s.el") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :host github :repo "rejeep/f.el") "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "nongnu-elpa" nil "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "compat" (compat :type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git"))) "seq" (seq :type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git"))))) nongnu-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 4 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil)) el-get #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil))))
+(fn &optional PREFIX)" t nil) (register-definition-prefixes "emacsql" '("emacsql-")) (register-definition-prefixes "emacsql-compiler" '("emacsql-")) (register-definition-prefixes "emacsql-mysql" '("emacsql-mysql-")) (register-definition-prefixes "emacsql-pg" '("emacsql-pg-connection")) (register-definition-prefixes "emacsql-psql" '("emacsql-psql-")) (register-definition-prefixes "emacsql-sqlite" '("emacsql-sqlite-")) (register-definition-prefixes "emacsql-sqlite-builtin" '("emacsql-sqlite-builtin-connection")) (register-definition-prefixes "emacsql-sqlite-common" '("emacsql-")) (register-definition-prefixes "emacsql-sqlite-module" '("emacsql-sqlite-module-connection")) (provide 'emacsql-autoloads)) "magit-section" ((magit-section-pkg magit-section-autoloads magit-section) (register-definition-prefixes "magit-section" '("isearch-clean-overlays@magit-mode" "magit-")) (provide 'magit-section-autoloads)) "org-roam" ((org-roam-protocol org-roam-migrate org-roam-log org-roam-overlay org-roam-db org-roam-capture org-roam-mode org-roam-node org-roam org-roam-compat org-roam-utils org-roam-autoloads org-roam-dailies org-roam-graph org-roam-export org-roam-id) (autoload 'org-roam-list-files "org-roam" "Return a list of all Org-roam files under `org-roam-directory'.
+See `org-roam-file-p' for how each file is determined to be as
+part of Org-Roam." nil nil) (register-definition-prefixes "org-roam" '("org-roam-")) (autoload 'org-roam-capture- "org-roam-capture" "Main entry point of `org-roam-capture' module.
+GOTO and KEYS correspond to `org-capture' arguments.
+INFO is a plist for filling up Org-roam's capture templates.
+NODE is an `org-roam-node' construct containing information about the node.
+PROPS is a plist containing additional Org-roam properties for each template.
+TEMPLATES is a list of org-roam templates.
 
-("org-elpa" "melpa" "gnu-elpa-mirror" "nongnu-elpa" "el-get" "emacsmirror-mirror" "straight" "emacs" "use-package" "bind-key" "evil" "goto-chg" "cl-lib" "doom-themes" "doom-modeline" "compat" "seq" "nerd-icons" "shrink-path" "s" "dash" "f" "nyan-mode")
+(fn &key GOTO KEYS NODE INFO PROPS TEMPLATES)" nil nil) (autoload 'org-roam-capture "org-roam-capture" "Launches an `org-capture' process for a new or existing node.
+This uses the templates defined at `org-roam-capture-templates'.
+Arguments GOTO and KEYS see `org-capture'.
+FILTER-FN is a function to filter out nodes: it takes an `org-roam-node',
+and when nil is returned the node will be filtered out.
+The TEMPLATES, if provided, override the list of capture templates (see
+`org-roam-capture-'.)
+The INFO, if provided, is passed along to the underlying `org-roam-capture-'.
+
+(fn &optional GOTO KEYS &key FILTER-FN TEMPLATES INFO)" t nil) (register-definition-prefixes "org-roam-capture" '("org-roam-capture-")) (register-definition-prefixes "org-roam-compat" '("org-roam--")) (autoload 'org-roam-dailies-capture-today "org-roam-dailies" "Create an entry in the daily-note for today.
+When GOTO is non-nil, go the note without creating an entry.
+
+ELisp programs can set KEYS to a string associated with a template.
+In this case, interactive selection will be bypassed.
+
+(fn &optional GOTO KEYS)" t nil) (autoload 'org-roam-dailies-goto-today "org-roam-dailies" "Find the daily-note for today, creating it if necessary.
+
+ELisp programs can set KEYS to a string associated with a template.
+In this case, interactive selection will be bypassed.
+
+(fn &optional KEYS)" t nil) (autoload 'org-roam-dailies-capture-tomorrow "org-roam-dailies" "Create an entry in the daily-note for tomorrow.
+
+With numeric argument N, use the daily-note N days in the future.
+
+With a `C-u' prefix or when GOTO is non-nil, go the note without
+creating an entry.
+
+ELisp programs can set KEYS to a string associated with a template.
+In this case, interactive selection will be bypassed.
+
+(fn N &optional GOTO KEYS)" t nil) (autoload 'org-roam-dailies-goto-tomorrow "org-roam-dailies" "Find the daily-note for tomorrow, creating it if necessary.
+
+With numeric argument N, use the daily-note N days in the
+future.
+
+ELisp programs can set KEYS to a string associated with a template.
+In this case, interactive selection will be bypassed.
+
+(fn N &optional KEYS)" t nil) (autoload 'org-roam-dailies-capture-yesterday "org-roam-dailies" "Create an entry in the daily-note for yesteday.
+
+With numeric argument N, use the daily-note N days in the past.
+
+When GOTO is non-nil, go the note without creating an entry.
+
+ELisp programs can set KEYS to a string associated with a template.
+In this case, interactive selection will be bypassed.
+
+(fn N &optional GOTO KEYS)" t nil) (autoload 'org-roam-dailies-goto-yesterday "org-roam-dailies" "Find the daily-note for yesterday, creating it if necessary.
+
+With numeric argument N, use the daily-note N days in the
+future.
+
+ELisp programs can set KEYS to a string associated with a template.
+In this case, interactive selection will be bypassed.
+
+(fn N &optional KEYS)" t nil) (autoload 'org-roam-dailies-capture-date "org-roam-dailies" "Create an entry in the daily-note for a date using the calendar.
+Prefer past dates, unless PREFER-FUTURE is non-nil.
+With a `C-u' prefix or when GOTO is non-nil, go the note without
+creating an entry.
+
+ELisp programs can set KEYS to a string associated with a template.
+In this case, interactive selection will be bypassed.
+
+(fn &optional GOTO PREFER-FUTURE KEYS)" t nil) (autoload 'org-roam-dailies-goto-date "org-roam-dailies" "Find the daily-note for a date using the calendar, creating it if necessary.
+Prefer past dates, unless PREFER-FUTURE is non-nil.
+
+ELisp programs can set KEYS to a string associated with a template.
+In this case, interactive selection will be bypassed.
+
+(fn &optional PREFER-FUTURE KEYS)" t nil) (autoload 'org-roam-dailies-find-directory "org-roam-dailies" "Find and open `org-roam-dailies-directory'." t nil) (register-definition-prefixes "org-roam-dailies" '("org-roam-dailies-")) (autoload 'org-roam-db-sync "org-roam-db" "Synchronize the cache state with the current Org files on-disk.
+If FORCE, force a rebuild of the cache from scratch.
+
+(fn &optional FORCE)" t nil) (defvar org-roam-db-autosync-mode nil "Non-nil if Org-Roam-Db-Autosync mode is enabled.
+See the `org-roam-db-autosync-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `org-roam-db-autosync-mode'.") (custom-autoload 'org-roam-db-autosync-mode "org-roam-db" nil) (autoload 'org-roam-db-autosync-mode "org-roam-db" "Global minor mode to keep your Org-roam session automatically synchronized.
+Through the session this will continue to setup your
+buffers (that are Org-roam file visiting), keep track of the
+related changes, maintain cache consistency and incrementally
+update the currently active database.
+
+This is a minor mode.  If called interactively, toggle the
+`Org-Roam-Db-Autosync mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `(default-value \\='org-roam-db-autosync-mode)'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+If you need to manually trigger resync of the currently active
+database, see `org-roam-db-sync' command.
+
+(fn &optional ARG)" t nil) (autoload 'org-roam-db-autosync-enable "org-roam-db" "Activate `org-roam-db-autosync-mode'." nil nil) (register-definition-prefixes "org-roam-db" '("emacsql-constraint" "org-roam-d")) (register-definition-prefixes "org-roam-export" '("org-roam-export--org-html--reference")) (autoload 'org-roam-graph "org-roam-graph" "Build and possibly display a graph for NODE.
+ARG may be any of the following values:
+  - nil       show the graph.
+  - `\\[universal-argument]'     show the graph for NODE.
+  - `\\[universal-argument]' N   show the graph for NODE limiting nodes to N steps.
+
+(fn &optional ARG NODE)" t nil) (register-definition-prefixes "org-roam-graph" '("org-roam-")) (autoload 'org-roam-update-org-id-locations "org-roam-id" "Scan Org-roam files to update `org-id' related state.
+This is like `org-id-update-id-locations', but will automatically
+use the currently bound `org-directory' and `org-roam-directory'
+along with DIRECTORIES (if any), where the lookup for files in
+these directories will be always recursive.
+
+Note: Org-roam doesn't have hard dependency on
+`org-id-locations-file' to lookup IDs for nodes that are stored
+in the database, but it still tries to properly integrates with
+`org-id'. This allows the user to cross-reference IDs outside of
+the current `org-roam-directory', and also link with \"id:\"
+links to headings/files within the current `org-roam-directory'
+that are excluded from identification in Org-roam as
+`org-roam-node's, e.g. with \"ROAM_EXCLUDE\" property.
+
+(fn &rest DIRECTORIES)" t nil) (register-definition-prefixes "org-roam-id" '("org-roam-id-")) (register-definition-prefixes "org-roam-log" '("org-roam-log-")) (autoload 'org-roam-migrate-wizard "org-roam-migrate" "Migrate all notes from to be compatible with Org-roam v2.
+1. Convert all notes from v1 format to v2.
+2. Rebuild the cache.
+3. Replace all file links with ID links." t nil) (register-definition-prefixes "org-roam-migrate" '("org-roam-migrate-")) (autoload 'org-roam-buffer-display-dedicated "org-roam-mode" "Launch NODE dedicated Org-roam buffer.
+Unlike the persistent `org-roam-buffer', the contents of this
+buffer won't be automatically changed and will be held in place.
+
+In interactive calls prompt to select NODE, unless called with
+`universal-argument', in which case NODE will be set to
+`org-roam-node-at-point'.
+
+(fn NODE)" t nil) (register-definition-prefixes "org-roam-mode" '("org-roam-")) (autoload 'org-roam-node-find "org-roam-node" "Find and open an Org-roam node by its title or alias.
+INITIAL-INPUT is the initial input for the prompt.
+FILTER-FN is a function to filter out nodes: it takes an `org-roam-node',
+and when nil is returned the node will be filtered out.
+If OTHER-WINDOW, visit the NODE in another window.
+The TEMPLATES, if provided, override the list of capture templates (see
+`org-roam-capture-'.)
+
+(fn &optional OTHER-WINDOW INITIAL-INPUT FILTER-FN PRED &key TEMPLATES)" t nil) (autoload 'org-roam-node-random "org-roam-node" "Find and open a random Org-roam node.
+With prefix argument OTHER-WINDOW, visit the node in another
+window instead.
+FILTER-FN is a function to filter out nodes: it takes an `org-roam-node',
+and when nil is returned the node will be filtered out.
+
+(fn &optional OTHER-WINDOW FILTER-FN)" t nil) (autoload 'org-roam-node-insert "org-roam-node" "Find an Org-roam node and insert (where the point is) an \"id:\" link to it.
+FILTER-FN is a function to filter out nodes: it takes an `org-roam-node',
+and when nil is returned the node will be filtered out.
+The TEMPLATES, if provided, override the list of capture templates (see
+`org-roam-capture-'.)
+The INFO, if provided, is passed to the underlying `org-roam-capture-'.
+
+(fn &optional FILTER-FN &key TEMPLATES INFO)" t nil) (autoload 'org-roam-refile "org-roam-node" "Refile node at point to an Org-roam node.
+If region is active, then use it instead of the node at point." t nil) (autoload 'org-roam-extract-subtree "org-roam-node" "Convert current subtree at point to a node, and extract it into a new file." t nil) (autoload 'org-roam-ref-find "org-roam-node" "Find and open an Org-roam node that's dedicated to a specific ref.
+INITIAL-INPUT is the initial input to the prompt.
+FILTER-FN is a function to filter out nodes: it takes an `org-roam-node',
+and when nil is returned the node will be filtered out.
+
+(fn &optional INITIAL-INPUT FILTER-FN)" t nil) (register-definition-prefixes "org-roam-node" '("org-roam-")) (register-definition-prefixes "org-roam-overlay" '("org-roam-overlay-")) (register-definition-prefixes "org-roam-protocol" '("org-roam-")) (autoload 'org-roam-version "org-roam-utils" "Return `org-roam' version.
+Interactively, or when MESSAGE is non-nil, show in the echo area.
+
+(fn &optional MESSAGE)" t nil) (autoload 'org-roam-diagnostics "org-roam-utils" "Collect and print info for `org-roam' issues." t nil) (register-definition-prefixes "org-roam-utils" '("org-roam-")) (provide 'org-roam-autoloads)) "simple-httpd" ((simple-httpd-autoloads simple-httpd) (autoload 'httpd-start "simple-httpd" "Start the web server process. If the server is already
+running, this will restart the server. There is only one server
+instance per Emacs instance." t nil) (autoload 'httpd-stop "simple-httpd" "Stop the web server if it is currently running, otherwise do nothing." t nil) (autoload 'httpd-running-p "simple-httpd" "Return non-nil if the simple-httpd server is running." nil nil) (autoload 'httpd-serve-directory "simple-httpd" "Start the web server with given `directory' as `httpd-root'.
+
+(fn DIRECTORY)" t nil) (register-definition-prefixes "simple-httpd" '("defservlet" "httpd" "with-httpd-buffer")) (provide 'simple-httpd-autoloads)) "websocket" ((websocket websocket-autoloads) (register-definition-prefixes "websocket" '("websocket-")) (provide 'websocket-autoloads)) "org-roam-ui" ((org-roam-ui org-roam-ui-autoloads) (defvar org-roam-ui-mode nil "Non-nil if org-roam-ui mode is enabled.
+See the `org-roam-ui-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `org-roam-ui-mode'.") (custom-autoload 'org-roam-ui-mode "org-roam-ui" nil) (autoload 'org-roam-ui-mode "org-roam-ui" "Enable org-roam-ui.
+This serves the web-build and API over HTTP.
+
+This is a minor mode.  If called interactively, toggle the
+`org-roam-ui mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `(default-value \\='org-roam-ui-mode)'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (autoload 'org-roam-ui-open "org-roam-ui" "Ensure `org-roam-ui' is running, then open the `org-roam-ui' webpage." t nil) (autoload 'org-roam-ui-node-zoom "org-roam-ui" "Move the view of the graph to current node.
+or optionally a node of your choosing.
+Optionally takes three arguments:
+The ID of the node you want to travel to.
+The SPEED in ms it takes to make the transition.
+The PADDING around the nodes in the viewport.
+
+(fn &optional ID SPEED PADDING)" t nil) (autoload 'org-roam-ui-node-local "org-roam-ui" "Open the local graph view of the current node.
+Optionally with ID (string), SPEED (number, ms) and PADDING (number, px).
+
+(fn &optional ID SPEED PADDING)" t nil) (autoload 'org-roam-ui-add-to-local-graph "org-roam-ui" "Add current node to the local graph. If not in local mode, open local-graph for this node.
+
+(fn &optional ID)" t nil) (autoload 'org-roam-ui-remove-from-local-graph "org-roam-ui" "Remove current node from the local graph. If not in local mode, open local-graph for this node.
+
+(fn &optional ID)" t nil) (autoload 'org-roam-ui-sync-theme "org-roam-ui" "Sync your current Emacs theme with org-roam-ui." t nil) (defvar org-roam-ui-follow-mode nil "Non-nil if org-roam-ui-Follow mode is enabled.
+See the `org-roam-ui-follow-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `org-roam-ui-follow-mode'.") (custom-autoload 'org-roam-ui-follow-mode "org-roam-ui" nil) (autoload 'org-roam-ui-follow-mode "org-roam-ui" "Set whether ORUI should follow your every move in Emacs.
+
+This is a minor mode.  If called interactively, toggle the
+`org-roam-ui-Follow mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `(default-value \\='org-roam-ui-follow-mode)'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (register-definition-prefixes "org-roam-ui" '("img/:file" "node/:id" "org-roam-ui-")) (provide 'org-roam-ui-autoloads)) "auctex" ((preview auctex-autoloads font-latex tex-jp multi-prompt \.dir-locals toolbar-x texmathp tex-fold bib-cite tex-mik latex tex-ispell plain-tex context tex-bar lpath context-en tex context-nl auctex latex-flymake tex-font tex-wizard tex-style tex-site tex-info) (autoload 'bib-cite-minor-mode "bib-cite" "Toggle bib-cite mode.
+When bib-cite mode is enabled, citations, labels and refs are highlighted
+when the mouse is over them.  Clicking on these highlights with [mouse-2]
+runs `bib-find', and [mouse-3] runs `bib-display'.
+
+(fn ARG)" t nil) (autoload 'turn-on-bib-cite "bib-cite" "Unconditionally turn on Bib Cite mode." nil nil) (register-definition-prefixes "bib-cite" '("LaTeX-find-label-hist-alist" "bib-" "create-alist-from-list" "member-cis" "psg-" "search-directory-tree")) (defalias 'ConTeXt-mode #'context-mode) (autoload 'context-mode "context" "Major mode in AUCTeX for editing ConTeXt files.
+
+Special commands:
+\\{ConTeXt-mode-map}
+
+Entering `context-mode' calls the value of `text-mode-hook',
+then the value of `TeX-mode-hook', and then the value
+of `ConTeXt-mode-hook'." t nil) (register-definition-prefixes "context" '("ConTeXt-" "TeX-ConTeXt-sentinel" "context-guess-current-interface")) (autoload 'context-en-mode "context-en" "Major mode for editing files for ConTeXt using its english interface.
+
+Special commands:
+\\{ConTeXt-mode-map}
+
+Entering `context-mode' calls the value of `text-mode-hook',
+then the value of `TeX-mode-hook', and then the value
+of `ConTeXt-mode-hook'." t nil) (register-definition-prefixes "context-en" '("ConTeXt-")) (autoload 'context-nl-mode "context-nl" "Major mode for editing files for ConTeXt using its dutch interface.
+
+Special commands:
+\\{ConTeXt-mode-map}
+
+Entering `context-mode' calls the value of `text-mode-hook',
+then the value of `TeX-mode-hook', and then the value
+of `ConTeXt-mode-hook'." t nil) (register-definition-prefixes "context-nl" '("ConTeXt-")) (autoload 'font-latex-setup "font-latex" "Setup this buffer for LaTeX font-lock.  Usually called from a hook." nil nil) (register-definition-prefixes "font-latex" '("font-latex-")) (autoload 'BibTeX-auto-store "latex" "This function should be called from `bibtex-mode-hook'.
+It will setup BibTeX to store keys in an auto file." nil nil) (add-to-list 'auto-mode-alist '("\\.drv\\'" . latex-mode) t) (add-to-list 'auto-mode-alist '("\\.hva\\'" . latex-mode)) (autoload 'TeX-latex-mode "latex" "Major mode in AUCTeX for editing LaTeX files.
+See info under AUCTeX for full documentation.
+
+Special commands:
+\\{LaTeX-mode-map}
+
+Entering LaTeX mode calls the value of `text-mode-hook',
+then the value of `TeX-mode-hook', and then the value
+of `LaTeX-mode-hook'." t nil) (add-to-list 'auto-mode-alist '("\\.dtx\\'" . doctex-mode)) (autoload 'docTeX-mode "latex" "Major mode in AUCTeX for editing .dtx files derived from `LaTeX-mode'.
+Runs `LaTeX-mode', sets a few variables and
+runs the hooks in `docTeX-mode-hook'.
+
+(fn)" t nil) (defalias 'TeX-doctex-mode #'docTeX-mode) (register-definition-prefixes "latex" '("Bib" "LaTeX-" "TeX-" "docTeX-" "latex-math-mode")) (register-definition-prefixes "latex-flymake" '("LaTeX-")) (autoload 'multi-prompt "multi-prompt" "Completing prompt for a list of strings.
+The first argument SEPARATOR should be the string (of length 1) to
+separate the elements in the list.  The second argument UNIQUE should
+be non-nil, if each element must be unique.  The remaining elements
+are the arguments to `completing-read'.  See that.
+
+(fn SEPARATOR UNIQUE PROMPT TABLE &optional MP-PREDICATE REQUIRE-MATCH INITIAL HISTORY)" nil nil) (autoload 'multi-prompt-key-value "multi-prompt" "Read multiple strings, with completion and key=value support.
+PROMPT is a string to prompt with, usually ending with a colon
+and a space.
+
+TABLE is an alist where each entry is a list.  The first element
+of each list is a string representing a key and the optional
+second element is a list with strings to be used as values for
+the key.  The second element can also be a variable returning a
+list of strings.
+
+See the documentation for `completing-read' for details on the
+other arguments: PREDICATE, REQUIRE-MATCH, INITIAL-INPUT, HIST,
+DEF, and INHERIT-INPUT-METHOD.
+
+The return value is the string as entered in the minibuffer.
+
+(fn PROMPT TABLE &optional PREDICATE REQUIRE-MATCH INITIAL-INPUT HIST DEF INHERIT-INPUT-METHOD)" nil nil) (register-definition-prefixes "multi-prompt" '("multi-prompt-")) (autoload 'TeX-plain-tex-mode "plain-tex" "Major mode in AUCTeX for editing plain TeX files.
+See info under AUCTeX for documentation.
+
+Special commands:
+\\{plain-TeX-mode-map}
+
+Entering `plain-tex-mode' calls the value of `text-mode-hook',
+then the value of `TeX-mode-hook', and then the value
+of `plain-TeX-mode-hook'." t nil) (autoload 'ams-tex-mode "plain-tex" "Major mode in AUCTeX for editing AmS-TeX files.
+See info under AUCTeX for documentation.
+
+Special commands:
+\\{AmSTeX-mode-map}
+
+Entering `ams-tex-mode' calls the value of `text-mode-hook',
+then the value of `TeX-mode-hook', and then the value
+of `AmS-TeX-mode-hook'." t nil) (register-definition-prefixes "plain-tex" '("AmS" "plain-TeX-")) (put 'preview-scale-function 'safe-local-variable (lambda (x) (and (numberp x) (<= 0.1 x 10)))) (autoload 'desktop-buffer-preview "preview" "Hook function for restoring persistent previews into a buffer.
+
+(fn FILE-NAME BUFFER-NAME MISC)" nil nil) (add-to-list 'desktop-buffer-mode-handlers '(latex-mode . desktop-buffer-preview)) (autoload 'preview-install-styles "preview" "Installs the TeX style files into a permanent location.
+This must be in the TeX search path.  If FORCE-OVERWRITE is greater
+than 1, files will get overwritten without query, if it is less
+than 1 or nil, the operation will fail.  The default of 1 for interactive
+use will query.
+
+Similarly FORCE-SAVE can be used for saving
+`preview-TeX-style-dir' to record the fact that the uninstalled
+files are no longer needed in the search path.
+
+(fn DIR &optional FORCE-OVERWRITE FORCE-SAVE)" t nil) (autoload 'LaTeX-preview-setup "preview" "Hook function for embedding the preview package into AUCTeX.
+This is called by `LaTeX-mode-hook' and changes AUCTeX variables
+to add the preview functionality." nil nil) (autoload 'preview-report-bug "preview" "Report a bug in the preview-latex package." t nil) (register-definition-prefixes "preview" '("TeX-" "desktop-buffer-preview-misc-data" "preview-")) (autoload 'TeX-tex-mode "tex" "Major mode in AUCTeX for editing TeX or LaTeX files.
+Tries to guess whether this file is for plain TeX or LaTeX.
+
+The algorithm is as follows:
+
+   1) if the file is empty or `TeX-force-default-mode' is not set to nil,
+      `TeX-default-mode' is chosen
+   2) If \\documentstyle or \\begin{, \\section{, \\part{ or \\chapter{ is
+      found, `latex-mode' is selected.
+   3) Otherwise, use `plain-tex-mode'" t nil) (autoload 'TeX-auto-generate "tex" "Generate style file for TEX and store it in AUTO.
+If TEX is a directory, generate style files for all files in the directory.
+
+(fn TEX AUTO)" t nil) (autoload 'TeX-auto-generate-global "tex" "Create global auto directory for global TeX macro definitions." t nil) (autoload 'TeX-submit-bug-report "tex" "Submit a bug report on AUCTeX via mail.
+
+Don't hesitate to report any problems or inaccurate documentation.
+
+If you don't have setup sending mail from Emacs, please copy the
+output buffer into your mail program, as it gives us important
+information about your AUCTeX version and AUCTeX configuration." t nil) (register-definition-prefixes "tex" '("Bib" "ConTeXt-" "LaTeX-" "TeX-" "VirTeX-common-initialization" "docTeX-default-extension" "plain-TeX-auto-regexp-list" "tex-")) (autoload 'TeX-install-toolbar "tex-bar" "Install toolbar buttons for TeX mode." t nil) (autoload 'LaTeX-install-toolbar "tex-bar" "Install toolbar buttons for LaTeX mode." t nil) (register-definition-prefixes "tex-bar" '("TeX-bar-")) (autoload 'TeX-fold-mode "tex-fold" "Minor mode for hiding and revealing macros and environments.
+
+Called interactively, with no prefix argument, toggle the mode.
+With universal prefix ARG (or if ARG is nil) turn mode on.
+With zero or negative ARG turn mode off.
+
+(fn &optional ARG)" t nil) (defalias 'tex-fold-mode #'TeX-fold-mode) (register-definition-prefixes "tex-fold" '("TeX-fold-")) (autoload 'tex-font-setup "tex-font" "Setup font lock support for TeX." nil nil) (register-definition-prefixes "tex-font" '("tex-")) (defalias 'Texinfo-mode #'texinfo-mode) (autoload 'TeX-texinfo-mode "tex-info" "Major mode in AUCTeX for editing Texinfo files.
+
+Special commands:
+\\{Texinfo-mode-map}
+
+Entering Texinfo mode calls the value of `text-mode-hook' and then the
+value of `Texinfo-mode-hook'." t nil) (register-definition-prefixes "tex-info" '("Texinfo-" "texinfo-environment-regexp")) (register-definition-prefixes "tex-ispell" '("TeX-ispell-")) (autoload 'japanese-plain-tex-mode "tex-jp" "Major mode in AUCTeX for editing Japanese plain TeX files.
+Set `japanese-TeX-mode' to t, and enter `TeX-plain-tex-mode'." t nil) (autoload 'japanese-latex-mode "tex-jp" "Major mode in AUCTeX for editing Japanese LaTeX files.
+Set `japanese-TeX-mode' to t, and enter `TeX-latex-mode'." t nil) (register-definition-prefixes "tex-jp" '("TeX-japanese-process-" "japanese-")) (require 'tex-site) (register-definition-prefixes "tex-site" '("AUCTeX-" "TeX-" "preview-TeX-style-dir" "tex-site-unload-function")) (register-definition-prefixes "tex-style" '("LaTeX-" "TeX-TikZ-point-name-regexp")) (register-definition-prefixes "tex-wizard" '("TeX-wizard")) (autoload 'texmathp "texmathp" "Determine if point is inside (La)TeX math mode.
+Returns t or nil.  Additional info is placed into `texmathp-why'.
+The functions assumes that you have (almost) syntactically correct (La)TeX in
+the buffer.
+See the variable `texmathp-tex-commands' about which commands are checked." t nil) (autoload 'texmathp-match-switch "texmathp" "Search backward for any of the math switches.
+Limit searched to BOUND.
+
+(fn BOUND)" nil nil) (register-definition-prefixes "texmathp" '("texmathp-")) (autoload 'toolbarx-install-toolbar "toolbar-x") (register-definition-prefixes "toolbar-x" '("toolbarx-")) (provide 'auctex-autoloads))))
+
+#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 15 "melpa" nil "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "use-package" nil "bind-key" nil "evil" nil "goto-chg" nil "cl-lib" nil "doom-themes" nil "doom-modeline" nil "compat" nil "seq" nil "nerd-icons" nil "shrink-path" nil "s" nil "dash" nil "f" nil "nyan-mode" nil "org-taskwarrior" nil "taskwarrior" nil "org-roam" nil "org" (org :type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*"))) "emacsql" nil "magit-section" nil "org-roam-ui" nil "simple-httpd" nil "websocket" nil "auctex" nil "reftex" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" (el-get :type git :flavor melpa :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "bind-key" (bind-key :type git :flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :host github :repo "jwiegley/use-package") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "cl-lib" nil "doom-themes" (doom-themes :type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes") "doom-modeline" (doom-modeline :type git :flavor melpa :host github :repo "seagle0128/doom-modeline") "compat" nil "seq" nil "nerd-icons" (nerd-icons :type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el") "shrink-path" (shrink-path :type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el") "s" (s :type git :flavor melpa :host github :repo "magnars/s.el") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :host github :repo "rejeep/f.el") "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode") "org-taskwarrior" nil "taskwarrior" nil "org-roam" (org-roam :type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam") "emacsql" (emacsql :type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql") "magit-section" (magit-section :type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit") "org-roam-ui" (org-roam-ui :type git :flavor melpa :files (:defaults "out" "org-roam-ui-pkg.el") :host github :repo "org-roam/org-roam-ui") "simple-httpd" (simple-httpd :type git :flavor melpa :host github :repo "skeeto/emacs-web-server") "websocket" (websocket :type git :flavor melpa :host github :repo "ahyatt/emacs-websocket") "auctex" nil "reftex" nil)) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "nongnu-elpa" nil "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "compat" (compat :type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git"))) "seq" (seq :type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git"))) "org-taskwarrior" nil "taskwarrior" nil "auctex" (auctex :type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git"))) "reftex" nil)) nongnu-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 4 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "org-taskwarrior" nil "taskwarrior" nil "reftex" nil)) el-get #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "org-taskwarrior" nil "taskwarrior" nil "reftex" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "org-taskwarrior" nil "taskwarrior" nil "reftex" nil))))
+
+("org-elpa" "melpa" "gnu-elpa-mirror" "nongnu-elpa" "el-get" "emacsmirror-mirror" "straight" "emacs" "use-package" "bind-key" "evil" "goto-chg" "cl-lib" "doom-themes" "doom-modeline" "compat" "seq" "nerd-icons" "shrink-path" "s" "dash" "f" "nyan-mode" "auctex" "reftex" "org-roam" "org" "emacsql" "magit-section" "org-roam-ui" "simple-httpd" "websocket")
 
 t
