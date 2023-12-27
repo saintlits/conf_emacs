@@ -158,6 +158,13 @@
   (setq nyan-wavy-trail t)
   (nyan-mode))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 插件库
+;;
+;; 设置Tex
+(add-to-list 'load-path "~/.emacs.d/plugins")
+(require 'init-tex)
+
 ;; 打开一个Shell窗口
 (defun open-shell ()
   "Open a shell window."
@@ -183,6 +190,7 @@
 ;; 在启动时打开Shell窗口
 (add-hook 'emacs-startup-hook 'open-shell)
 ;;(add-hook 'emacs-startup-hook 'my-start-common-lisp-environment)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
