@@ -1,0 +1,65 @@
+asdfjksjdf
+ls
+cd code/python/
+ls
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+python transfer.py 
+..
+ls
+git add .
+git add python/transfer.py 
+git commit -m "add new python file"
+vim .gitignore
+git reset
+git reset
+git reset
+git status
+git revert
+git reset HEAD^
+git status
+git add .
+git status
+git remove
+git rm
+git rm #gemini.md#
+git rm ./#gemini.md#
+git rm -f ./#gemini.md#
+ls
+ls -alh
+git rm --cache ./#gemini.md#
+git status
+git commmit -m "add new python files"
+git commit -m "add new python files"
+git push -u origin mian
+git push -u origin main
+ls
+git add TODO.org 
+git commit -m "add TODO.org file"
+git push -u origin main
+idjfs
+:wq
+ls
+:q
+:q
+ge 'docker使用的相关命令'
+ge 'docker如果有现有的.env和docker-compose.yml文件应该怎么运行'
+mkdir app/tinyRss
+cd app/tinyRss/
+ls
+touch .env
+touch docker-compose.yml
+:q

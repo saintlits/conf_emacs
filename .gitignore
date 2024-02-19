@@ -1,3 +1,4 @@
-straight/
-elpa/
-eln-cache/
+/straight/
+/elpa/
+/eln-cache/
+/plugins/
