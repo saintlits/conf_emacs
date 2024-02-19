@@ -10,8 +10,15 @@
 ;;	     (set-frame-size (make-frame-size 150 50)))
 
 ;; 设置Emacs窗口大小
-(add-to-list 'default-frame-alist '(width . 85))   ; 设置宽度为80列
-(add-to-list 'default-frame-alist '(height . 35))  ; 设置高度为40行
+(add-to-list 'default-frame-alist '(width . 110))   ; 设置宽度为80列
+(add-to-list 'default-frame-alist '(height . 45))  ; 设置高度为40行
+
+;; Font
+(use-package emacs
+  :init
+  (set-face-attribute 'default nil 
+   ;; :font "PragmataPro Mono Liga" 
+    :height 118))
 
 ;; 启用'use-package'库
 (require 'package)
@@ -33,12 +40,6 @@
 ;;  :ensure t
 ;;  :hook (org-mode . auto-revert-mode))
 
-
-;; 启用slime
-(use-package slime
-  :ensure t
-  :config
-  (setq inferior-lisp-program "sbcl"))
 
 
 ;; 启用重载
@@ -118,12 +119,6 @@
   :config
   (evil-mode 1))
 
-;; Font
-(use-package emacs
-  :init
-  (set-face-attribute 'default nil 
-   ;; :font "PragmataPro Mono Liga" 
-    :height 150))
 
 ;; Theme
 (use-package doom-themes
@@ -158,6 +153,18 @@
   (setq nyan-wavy-trail t)
   (nyan-mode))
 
+;; 启用slime
+;(use-package slime
+;  :ensure t
+;  :config
+;  (setq inferior-lisp-program "sbcl"))
+
+
+;; sly mode
+(require 'sly-autoloads)
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(add-hook 'lisp-mode-hook 'sly-editing-mode)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 插件库
 ;;
@@ -173,16 +180,19 @@
   (other-window 1)      ; 切换到新窗口
   (setq eshell-banner-message "")
   (eshell)
-  (enlarge-window -10))             ; 打开eshell
+  (other-window 1)      ; 切换回原窗口
+  (enlarge-window 50))             ; 打开eshell
 
-;; 定义史莱姆
+
+;; 打开sly窗口
 (defun my-start-common-lisp-environment ()
   "Start a Common Lisp environment in a new window."
   (interactive)
-  (split-window-right)               ; 水平分割窗口
-  (other-window 1)                   ; 切换到右侧窗口
+  ;(split-window-right)               ; 水平分割窗口
+  ;(other-window 1)                   ; 切换到右侧窗口
+  (sly))
   ;;(other-window 1)                   ; 切换回左侧窗口
-  (inferior-lisp "sbcl"))
+  ;(inferior-lisp "sbcl"))
 
 (global-set-key (kbd "C-c C-z") 'my-start-common-lisp-environment)
 
@@ -220,6 +230,7 @@
 (use-package org-roam
   :ensure t
   :init
+  (org-roam-db-autosync-mode)
   (setq org-roam-v2-ack t) ;; 如果你使用 v2 版本，请设置这个选项
   :custom
   (org-roam-directory "~/ywq_doc/")
@@ -235,6 +246,7 @@
          ("C-c n n" . org-roam-capture)
          ("C-c n t" . org-roam-dailies-capture-today)
          ("C-c n y" . org-roam-dailies-capture-yesterday)
+         ("M-n" . org-id-get-create)
          ;; Add more keybindings as needed
          )
   :config
@@ -258,6 +270,57 @@
           org-roam-ui-update-on-save t
           org-roam-ui-open-on-start t))
 
+;;;;;;;;;;;
+;; note search
+;(use-package consult-notes
+;  :straight (:type git :host github :repo "mclear-tools/consult-notes")
+;  :commands (consult-notes
+;             consult-notes-search-in-all-notes
+;             ;; if using org-roam 
+;             consult-notes-org-roam-find-node
+;             consult-notes-org-roam-find-node-relation)
+;  :config
+;  (setq consult-notes-file-dir-sources '(("Org journals"  ?j  "/home/saint/ywq_doc/journals")
+;					 ("Org pages"  ?p "/home/saint/ywq_doc/pages/"))) ;; Set notes dir(s), see below
+;  ;; Set org-roam integration, denote integration, or org-heading integration e.g.:
+;  (setq consult-notes-org-headings-files '("~/path/to/file1.org"
+;                                           "~/path/to/file2.org"))
+;  (consult-notes-org-headings-mode)
+;  (when (locate-library "denote")
+;    (consult-notes-denote-mode))
+;  ;; search only for text files in denote dir
+;  (setq consult-notes-denote-files-function (function denote-directory-text-only-files)))
+
+;;;;;;
+;; org-search
+(use-package consult-org-roam
+   :ensure t
+   :after org-roam
+   :init
+   (require 'consult-org-roam)
+   ;; Activate the minor mode
+   (consult-org-roam-mode 1)
+   :custom
+   ;; Use `ripgrep' for searching with `consult-org-roam-search'
+   (consult-org-roam-grep-func #'consult-ripgrep)
+   ;; Configure a custom narrow key for `consult-buffer'
+   (consult-org-roam-buffer-narrow-key ?r)
+   ;; Display org-roam buffers right after non-org-roam buffers
+   ;; in consult-buffer (and not down at the bottom)
+   (consult-org-roam-buffer-after-buffers t)
+   :config
+   ;; Eventually suppress previewing for certain functions
+   (consult-customize
+    consult-org-roam-forward-links
+    :preview-key "M-.")
+   :bind
+   ;; Define some convenient keybindings as an addition
+   ("C-c n e" . consult-org-roam-file-find)
+   ("C-c n b" . consult-org-roam-backlinks)
+   ("C-c n B" . consult-org-roam-backlinks-recursive)
+   ("C-c n l" . consult-org-roam-forward-links)
+   ("C-c n r" . consult-org-roam-search))
+
 ;; multiple cursors
 (use-package multiple-cursors
 	     :ensure t
@@ -268,4 +331,26 @@
 	     (global-set-key (kbd "C-c m") 'mc/edit-lines)
 	     :config
 	     )
+
+;; Org-sync 
+;(add-to-list 'load-path "~/.emacs.d/plugins/org-sync")
+;(mapc 'load
+      ;;'("org-element" "os" "os-bb" "os-github" "os-rmine"))
+;      '( "os" "os-bb" "os-github" "os-rmine"))
+
+;; 配置 Deft 插件
+(use-package deft
+  :defer t
+  :ensure t
+  :bind (("C-c C-d" . deft))
+  :config
+  (setq deft-directory "~/ywq_doc")
+  (setq deft-extensions '("txt" "md" "org"))
+  (setq deft-use-filename-as-title t)
+  (setq deft-auto-save-interval 0)
+  (setq deft-default-extension "org")
+  (setq deft-file-naming-rules
+        '((noslash . "-")
+          (nospace . "-")
+          (case-fn . downcase))))
 
