@@ -30,6 +30,9 @@
   (package-install 'use-package))
 (require 'use-package)
 
+;; 重设按键绑定
+(global-set-key (kbd "M-j") 'org-roam-dailies-capture-today)
+
 ;; 安装Markdown模式
 (use-package markdown-mode
   :ensure t
@@ -172,6 +175,12 @@
 (add-to-list 'load-path "~/.emacs.d/plugins")
 (require 'init-tex)
 
+;; 默认打开org-roam
+(defun open-orgroam ()
+  "Open a org window"
+  (interactive)
+  (org-roam-dailies-goto-today))
+
 ;; 打开一个Shell窗口
 (defun open-shell ()
   "Open a shell window."
@@ -199,6 +208,7 @@
 
 ;; 在启动时打开Shell窗口
 (add-hook 'emacs-startup-hook 'open-shell)
+(add-hook 'emacs-startup-hook 'open-orgroam)
 ;;(add-hook 'emacs-startup-hook 'my-start-common-lisp-environment)
 
 
@@ -227,30 +237,33 @@
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;; 20231226 new plugins test
 ;; org-roam
-(use-package org-roam
-  :ensure t
-  :init
-  (org-roam-db-autosync-mode)
-  (setq org-roam-v2-ack t) ;; 如果你使用 v2 版本，请设置这个选项
-  :custom
-  (org-roam-directory "~/ywq_doc/")
-  (org-roam-dailies-directory "journals/")
-  (org-roam-capture-templates
-   '(("d" "default" plain
-      "%?" :target
-      (file+head "pages/${slug}.org" "#+title: ${title}\n")
-      :unnarrowed t)))
-  :bind (("C-c n f" . org-roam-node-find)
-         ("C-c n g" . org-roam-graph)
-         ("C-c n i" . org-roam-node-insert)
-         ("C-c n n" . org-roam-capture)
-         ("C-c n t" . org-roam-dailies-capture-today)
-         ("C-c n y" . org-roam-dailies-capture-yesterday)
-         ("M-n" . org-id-get-create)
-         ;; Add more keybindings as needed
-         )
-  :config
-  (org-roam-setup))
+;;(use-package org-roam
+;;  :ensure t
+;;  :init
+;;  (org-roam-db-autosync-mode)
+;;  (setq org-roam-completion-everywhere t)
+;;  (setq org-roam-v2-ack t) ;; 如果你使用 v2 版本，请设置这个选项
+;;  :custom
+;;  (org-roam-directory "~/ywq_doc/")
+;;  (org-roam-dailies-directory "journals/")
+;;  (org-roam-capture-templates
+;;   '(("d" "default" plain
+;;      "%?" :target
+;;      (file+head "pages/${slug}.org" "#+title: ${title}\n")
+;;      :unnarrowed t)))
+;;  :bind (("C-c n f" . org-roam-node-find)
+;;         ("C-c n g" . org-roam-graph)
+;;         ("C-c n i" . org-roam-node-insert)
+;;         ("C-c n n" . org-roam-capture)
+;;         ("C-c n t" . org-roam-dailies-capture-today)
+;;         ("C-c n y" . org-roam-dailies-capture-yesterday)
+;;         ("M-n" . org-id-get-create)
+;;         ;; Add more keybindings as needed
+;;         )
+;;  :config
+;;  (org-roam-setup))
+;;;; org-roam new configure file load
+(load "/home/saint/.emacs.d/plugins/org-roam.el")
 
 ;; org-roam-ui
 (use-package org-roam-ui

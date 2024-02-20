@@ -3,9 +3,8 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/ywq_doc/pages/test_org_roam.org")
- (front-context-string . "\n这是在[[2024-02-20")
- (rear-context-string . ": test-org-roam\n")
- (position . 91)
- (last-modified 26067 57473 311075 152000))
+ (filename . "~/ywq_doc/org/daily/2023-12-27.org")
+ (front-context-string . "* 今天看看那两个测试文件[[t")
+ (rear-context-string . "tle: 2023-12-27\n")
+ (position . 88))
 )
