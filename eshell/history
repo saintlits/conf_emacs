@@ -63,3 +63,12 @@ ls
 touch .env
 touch docker-compose.yml
 :q
+ls
+:q
+quit
+exit
+..
+ls
+grep -r '微信'
+:q
+:q
