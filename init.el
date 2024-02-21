@@ -17,8 +17,15 @@
 (use-package emacs
   :init
   (set-face-attribute 'default nil 
-   ;; :font "PragmataPro Mono Liga" 
+    ;; :font "PragmataPro Mono Liga" 
+    :font "Fira Code"
     :height 118))
+
+;; 自定义emacs
+(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
+(load-theme 'nord t)
+
+
 
 ;; 启用'use-package'库
 (require 'package)
@@ -32,6 +39,7 @@
 
 ;; 重设按键绑定
 (global-set-key (kbd "M-j") 'org-roam-dailies-capture-today)
+(global-set-key (kbd "M-n") 'org-id-get-create)
 
 ;; 安装Markdown模式
 (use-package markdown-mode
@@ -175,11 +183,6 @@
 (add-to-list 'load-path "~/.emacs.d/plugins")
 (require 'init-tex)
 
-;; 默认打开org-roam
-(defun open-orgroam ()
-  "Open a org window"
-  (interactive)
-  (org-roam-dailies-goto-today))
 
 ;; 打开一个Shell窗口
 (defun open-shell ()
@@ -192,6 +195,12 @@
   (other-window 1)      ; 切换回原窗口
   (enlarge-window 50))             ; 打开eshell
 
+;; 默认打开org-roam
+(defun open-orgroam ()
+  "Open a org window"
+  (interactive)
+  (org-roam-dailies-goto-today)
+  (end-of-buffer))
 
 ;; 打开sly窗口
 (defun my-start-common-lisp-environment ()
@@ -367,3 +376,4 @@
           (nospace . "-")
           (case-fn . downcase))))
 
+;; 主题设置
