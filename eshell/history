@@ -72,3 +72,5 @@ ls
 grep -r '微信'
 :q
 :q
+:q
+cd
