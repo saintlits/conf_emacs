@@ -14,16 +14,25 @@
 (add-to-list 'default-frame-alist '(height . 45))  ; 设置高度为40行
 
 ;; Font
-(use-package emacs
-  :init
-  (set-face-attribute 'default nil 
-    ;; :font "PragmataPro Mono Liga" 
-    :font "Fira Code"
-    :height 118))
+;  (set-face-attribute 'default nil 
+;    ;; :font "PragmataPro Mono Liga" 
+;    :font "Fira Code"
+;    :height 118)
+(set-face-attribute 'default nil :font (font-spec :family "Fira Code" :size 16))
+(set-fontset-font t 'unicode (font-spec :family "Noto Color Emoji" :size 14))
+(set-fontset-font t '(#x2ff0 . #x9ffc) (font-spec :font "xinyijixiangsong" :size 17 :weight 'regular))
 
-;; 自定义emacs
-(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
-(load-theme 'nord t)
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
+(set-buffer-file-coding-system 'utf-8-unix)
+(set-clipboard-coding-system 'utf-8-unix)
+(set-file-name-coding-system 'utf-8-unix)
+(set-keyboard-coding-system 'utf-8-unix)
+(set-next-selection-coding-system 'utf-8-unix)
+(set-selection-coding-system 'utf-8-unix)
+(set-terminal-coding-system 'utf-8-unix)
+(setq locale-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
 
 
 
@@ -376,4 +385,34 @@
           (nospace . "-")
           (case-fn . downcase))))
 
-;; 主题设置
+;; Funtional macro
+(defun org-roam-insert-node-in-all-files ()
+  "Insert a Roam node in the current buffer, and every buffer of the active project's directory."
+  (interactive)
+  (let* ((project-directory ("/home/saint/ywq_doc/pages/"))
+         (files (directory-files project-directory "t")))
+    (dolist (file files)
+      (with-current-buffer (find-file-noselect file)
+        (org-id-get-create)
+        (save-buffer)))))
+
+;; 自定义emacs
+(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
+;(load-theme 'material t)
+; (load-theme 'nord t)
+;(load-theme 'afternoon t)
+;(load-theme 'melancholy t)
+(load-theme 'kanagawa t)
+        (customize-set-variable 'timu-caribbean-scale-org-document-title 1.4)
+        (customize-set-variable 'timu-caribbean-scale-org-document-info 1.4)
+        (customize-set-variable 'timu-caribbean-scale-org-level-1 1.2)
+        (customize-set-variable 'timu-caribbean-scale-org-level-2 1.1)
+        (customize-set-variable 'timu-caribbean-scale-org-level-3 1)
+        (customize-set-variable 'timu-spacegrey-org-intense-colors t)
+        (customize-set-variable 'timu-spacegrey-muted-colors t)
+        (customize-set-variable 'timu-spacegrey-contrasted-foreground t)
+        (customize-set-variable 'timu-caribbean-mode-line-border nil)
+	;(timu-line-mode 0)
+;(load-theme 'timu-spacegrey t)
+
+; (load-theme 'timu-caribbean t)

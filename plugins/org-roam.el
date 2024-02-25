@@ -95,7 +95,7 @@ Search for only document level nodes. Exclude dates."
                                       plain "%?"
                                       ;; could use
                                       ;; (file (concat org-directory "/org-roam/personal/templates/personal.org"))
-	                              :if-new (file+head "personal/${slug}.org"
+	                              :if-new (file+head "pages/${slug}.org"
                                                          "#+title: ${title}\n#+date: %<%Y-%m-%d %a %R>\n#+startup: showall\n\n")
                                       :immediate-finish t
                                       :empty-lines 1
@@ -103,7 +103,7 @@ Search for only document level nodes. Exclude dates."
 
                                      ("c" "Contacts"
                                       plain "%?"
-                                      :if-new (file+head "personal/contacts/${slug}.org"
+                                      :if-new (file+head "pages/contacts/${slug}.org"
                                                          "#+title: ${title}\n#+date: %<%Y-%m-%d %a %R>\n#+filetags: contacts\n#+startup: showall\n\n")
                                       :immediate-finish t
                                       :empty-lines 1
