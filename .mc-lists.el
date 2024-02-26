@@ -9,6 +9,7 @@
         evil-delete
         evil-delete-backward-word
         evil-delete-char
+        evil-find-char
         evil-force-normal-state
         evil-forward-char
         evil-insert
@@ -19,6 +20,7 @@
         evil-scroll-line-down
         evil-substitute
         evil-visual-char
+        indent-for-tab-command
         multiple-cursors-mode
         undo-redo
         ))
