@@ -22,6 +22,10 @@
 (set-fontset-font t 'unicode (font-spec :family "Noto Color Emoji" :size 14))
 (set-fontset-font t '(#x2ff0 . #x9ffc) (font-spec :font "xinyijixiangsong" :size 17 :weight 'regular))
 
+;; 换行
+(global-visual-line-mode t)
+
+
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 (set-buffer-file-coding-system 'utf-8-unix)
@@ -204,30 +208,8 @@
   (other-window 1)      ; 切换回原窗口
   (enlarge-window 50))             ; 打开eshell
 
-;; 默认打开org-roam
-(defun open-orgroam ()
-  "Open a org window"
-  (interactive)
-  (org-roam-dailies-goto-today)
-  (end-of-buffer))
-
-;; 打开sly窗口
-(defun my-start-common-lisp-environment ()
-  "Start a Common Lisp environment in a new window."
-  (interactive)
-  ;(split-window-right)               ; 水平分割窗口
-  ;(other-window 1)                   ; 切换到右侧窗口
-  (sly))
-  ;;(other-window 1)                   ; 切换回左侧窗口
-  ;(inferior-lisp "sbcl"))
-
 (global-set-key (kbd "C-c C-z") 'my-start-common-lisp-environment)
 
-
-;; 在启动时打开Shell窗口
-(add-hook 'emacs-startup-hook 'open-shell)
-(add-hook 'emacs-startup-hook 'open-orgroam)
-;;(add-hook 'emacs-startup-hook 'my-start-common-lisp-environment)
 
 
 (custom-set-variables
@@ -352,6 +334,14 @@
    ("C-c n l" . consult-org-roam-forward-links)
    ("C-c n r" . consult-org-roam-search))
 
+;; org-bullets org美化插件
+(use-package org-bullets
+  :ensure t
+  :config
+  (setq org-bullets-bullet-list '("◉" "○" "●" "◎" "►" "▸"))
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+
+
 ;; multiple cursors
 (use-package multiple-cursors
 	     :ensure t
@@ -385,7 +375,7 @@
           (nospace . "-")
           (case-fn . downcase))))
 
-;; Funtional macro
+;; Funtional macro (not finish)
 (defun org-roam-insert-node-in-all-files ()
   "Insert a Roam node in the current buffer, and every buffer of the active project's directory."
   (interactive)
@@ -396,7 +386,7 @@
         (org-id-get-create)
         (save-buffer)))))
 
-;; 自定义emacs
+;; 自定义emacs主题
 (add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
 ;(load-theme 'material t)
 ; (load-theme 'nord t)
@@ -416,3 +406,69 @@
 ;(load-theme 'timu-spacegrey t)
 
 ; (load-theme 'timu-caribbean t)
+
+;; 默认打开org-roam
+(defun open-orgroam ()
+  "Open a org window"
+  (interactive)
+  (org-roam-dailies-goto-today)
+  (end-of-buffer))
+
+;; 打开sly窗口
+(defun my-start-common-lisp-environment ()
+  "Start a Common Lisp environment in a new window."
+  (interactive)
+  ;(split-window-right)               ; 水平分割窗口
+  ;(other-window 1)                   ; 切换到右侧窗口
+  (sly))
+  ;;(other-window 1)                   ; 切换回左侧窗口
+  ;(inferior-lisp "sbcl"))
+
+
+;; 在打开文件时不打开日志（未完成）
+; (defun my-diary-check-before-open (filename)
+;   "Check if the given filename is the daily log file.
+; 
+; Return nil if it is, or the filename otherwise."
+;   (if (string-match "daily\\.log$" filename)
+;       nil
+;     filename))
+; 
+; (setq visit-hook (append visit-hook 'my-diary-check-before-open))
+
+;; 在启动时打开Shell窗口
+(add-hook 'emacs-startup-hook 'open-shell)
+;;(add-hook 'emacs-startup-hook 'my-start-common-lisp-environment)
+
+;; 在启动时检测是否打开了文件，如无则打开日志
+(defun open-orgroam-if-scratch ()
+  "Open org-roam if the current buffer is *scratch*."
+  (when (equal (buffer-name) "*scratch*")
+    (open-orgroam)))
+
+(add-hook 'emacs-startup-hook 'open-orgroam-if-scratch)
+
+;; auto snowEmacs
+(defvar my-snow-timer nil)
+
+(defun my-start-snow ()
+  "Start snow if not already started."
+  (unless (timerp my-snow-timer)
+    (setq my-snow-timer (run-with-idle-timer 5 t 'snow))))
+
+(defun my-stop-snow ()
+  "Stop snow if running."
+  (when (timerp my-snow-timer)
+    (cancel-timer my-snow-timer)
+    (setq my-snow-timer nil)
+    (delete-windows-on "*snow*")))
+
+(defun my-check-idle-time ()
+  "Check idle time and start/stop snow accordingly."
+  (if (and (boundp 'last-input-event)
+           (null (memq last-input-event '(nil undefined))))
+      (my-stop-snow)
+    (my-start-snow)))
+
+(add-hook 'post-command-hook 'my-check-idle-time)
+

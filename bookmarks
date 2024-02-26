@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/ywq_doc/journals/2024-02-25.org")
- (front-context-string . "* 11:37 需要进行全局梳理")
- (rear-context-string . "日 11:19]\n:end:\n\n")
- (position . 617)
- (last-modified 26074 46593 195254 606000))
+ (filename . "~/ywq_doc/journals/2024-02-26.org")
+ (front-context-string . "* 19:08 [[id:541")
+ (rear-context-string . "一 18:54]\n:end:\n\n")
+ (position . 908)
+ (last-modified 26076 28978 201855 715000))
 )
