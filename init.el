@@ -452,19 +452,20 @@
 (defvar my-snow-timer nil)
 
 (defun my-start-snow ()
-  "Start snow if not already started."
+   "Start snow if not already started."
   (unless (timerp my-snow-timer)
-    (setq my-snow-timer (run-with-idle-timer 5 t 'snow))))
+    (setq my-snow-timer (run-with-idle-timer 60 t 'snow))))
 
 (defun my-stop-snow ()
-  "Stop snow if running."
+   "Stop snow if running."
   (when (timerp my-snow-timer)
     (cancel-timer my-snow-timer)
     (setq my-snow-timer nil)
-    (delete-windows-on "*snow*")))
+    (kill-buffer "*snow*"))
+  (my-start-snow))
 
 (defun my-check-idle-time ()
-  "Check idle time and start/stop snow accordingly."
+   "Check idle time and start/stop snow accordingly."
   (if (and (boundp 'last-input-event)
            (null (memq last-input-event '(nil undefined))))
       (my-stop-snow)
