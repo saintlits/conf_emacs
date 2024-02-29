@@ -375,6 +375,28 @@
           (nospace . "-")
           (case-fn . downcase))))
 
+;; rust-emacs
+;(require 'rust-mode)
+(add-to-list 'load-path "/home/saint/code/rust/app/rust-mode")
+(autoload 'rust-mode "rust-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+;; enable ruse autofomat
+(setq rust-format-on-save t)
+;; bind
+(add-hook 'rust-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-c C-m") 'rust-toggle-mutability)))
+
+;; LSP
+;;(add-hook 'rust-mode-hook #'lsp)
+;; prettifying 
+;(add-hook 'rust-mode-hook
+;          (lambda () (prettify-symbols-mode)))
+;; prettifying list 
+;(push '(".add" . ?∔) rust-prettify-symbols-alist)
+
+
+
 ;; Funtional macro (not finish)
 (defun org-roam-insert-node-in-all-files ()
   "Insert a Roam node in the current buffer, and every buffer of the active project's directory."
