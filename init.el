@@ -52,7 +52,8 @@
 
 ;; 重设按键绑定
 (global-set-key (kbd "M-j") 'org-roam-dailies-capture-today)
-(global-set-key (kbd "M-n") 'org-id-get-create)
+(global-set-key (kbd "M-n") 'org-roam-dailies-goto-next-note)
+(global-set-key (kbd "M-p") 'org-roam-dailies-goto-previous-note)
 
 ;; 安装Markdown模式
 (use-package markdown-mode
@@ -93,6 +94,9 @@
 
 ;; Make use-package use straight.el
 (setq straight-use-package-by-default t)
+
+;; enable clocking
+
 
 ;; Always :defer t
 (setq use-package-always-defer t)
@@ -218,12 +222,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ignored-local-variable-values '((TeX-master . t)))
+ '(org-agenda-files '("~/ywq_doc/journals/2024-03-16.org"))
  '(org-capture-templates
    '(("C-i" "Todo" entry
-      (file+headline "~/ywq_doc/org/inbox.org" "Tasks")
-      "* TODO %?
-  %i
-  %a" :prepend t :immediate-finish t :jump-to-captured t :empty-lines 1 :empty-lines-before 1 :clock-in t :clock-keep t :clock-resume t :time-prompt t :tree-type week))))
+      (file+headline "/home/saint/ywq_doc/todo.txt/todo.txt" "Tasks")
+      "* TODO %?\12  %i\12  %a" :prepend t :immediate-finish t :jump-to-captured t :empty-lines 1 :empty-lines-before 1 :clock-in t :clock-keep t :clock-resume t :time-prompt t :tree-type week))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -407,6 +410,23 @@
       (with-current-buffer (find-file-noselect file)
         (org-id-get-create)
         (save-buffer)))))
+;;;;;;;
+;; use Helm
+(require 'helm)
+(helm-mode 1)
+
+;;;;;;
+;; use sketcher
+(use-package sketch-mode
+	     :defer t)
+
+;;;;;; 
+;; use mini-frame
+;(use-package mini-frame
+;	     :ensure t)
+
+
+
 
 ;; 自定义emacs主题
 (add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
@@ -429,6 +449,25 @@
 
 ; (load-theme 'timu-caribbean t)
 
+;;;;;;;
+;; use nano pack
+;(add-to-list 'load-path "/home/saint/.emacs.d/nano-emacs/")
+;(require 'nano.el)
+;(require 'nano-theme-dark.el)
+;(require 'nano-splash.el)
+;(require 'nano-command.el)
+(use-package nano-emacs
+  :demand
+  :no-require t
+  :straight (:host github :repo "rougier/nano-emacs")
+  :defines (nano-font-family-monospaced nano-font-size)
+  :config
+  (setq nano-font-family-monospaced "Fira Code")
+  (setq nano-font-size 14)
+  (require 'nano))
+
+
+
 ;; 默认打开org-roam
 (defun open-orgroam ()
   "Open a org window"
@@ -447,16 +486,9 @@
   ;(inferior-lisp "sbcl"))
 
 
-;; 在打开文件时不打开日志（未完成）
-; (defun my-diary-check-before-open (filename)
-;   "Check if the given filename is the daily log file.
-; 
-; Return nil if it is, or the filename otherwise."
-;   (if (string-match "daily\\.log$" filename)
-;       nil
-;     filename))
-; 
-; (setq visit-hook (append visit-hook 'my-diary-check-before-open))
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
+
 
 ;; 在启动时打开Shell窗口
 (add-hook 'emacs-startup-hook 'open-shell)
@@ -476,7 +508,7 @@
 (defun my-start-snow ()
    "Start snow if not already started."
   (unless (timerp my-snow-timer)
-    (setq my-snow-timer (run-with-idle-timer 60 t 'snow))))
+    (setq my-snow-timer (run-with-idle-timer 10 t 'snow))))
 
 (defun my-stop-snow ()
    "Stop snow if running."
