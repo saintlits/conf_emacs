@@ -461,6 +461,7 @@
   :no-require t
   :straight (:host github :repo "rougier/nano-emacs")
   :defines (nano-font-family-monospaced nano-font-size)
+  :bind ("C-M-z" . nano-toggle-theme)
   :config
   (setq nano-font-family-monospaced "Fira Code")
   (setq nano-font-size 14)
