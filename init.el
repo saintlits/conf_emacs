@@ -24,14 +24,22 @@
 
 ;; 换行
 (global-visual-line-mode t)
+;; 编码
+;;(setq default-file-coding-systems '(utf-8 gb2312))
+;(modify-coding-system-alist 'file "\\.txt\\'" 'chinese-gbk)
+;(add-to-list 'auto-mode-alist '("\\.txt$" . 'chinese-gbk))
+
+
+
+
 
 
 (set-language-environment "UTF-8")
-(set-default-coding-systems 'utf-8)
-(set-buffer-file-coding-system 'utf-8-unix)
+;(set-default-coding-systems 'utf-8)
+;(set-buffer-file-coding-system 'utf-8-unix)
 (set-clipboard-coding-system 'utf-8-unix)
-(set-file-name-coding-system 'utf-8-unix)
-(set-keyboard-coding-system 'utf-8-unix)
+;(set-file-name-coding-system 'utf-8-unix)
+;(set-keyboard-coding-system 'utf-8-unix)
 (set-next-selection-coding-system 'utf-8-unix)
 (set-selection-coding-system 'utf-8-unix)
 (set-terminal-coding-system 'utf-8-unix)
@@ -115,17 +123,17 @@
   (defalias 'yes-or-no-p 'y-or-n-p))
 
 ;; UTF-8 everywhere
-(use-package emacs
-  :init
-  (set-charset-priority 'unicode)
-  (setq locale-coding-system 'utf-8
-        coding-system-for-read 'utf-8
-        coding-system-for-write 'utf-8)
-  (set-terminal-coding-system 'utf-8)
-  (set-keyboard-coding-system 'utf-8)
-  (set-selection-coding-system 'utf-8)
-  (prefer-coding-system 'utf-8)
-  (setq default-process-coding-system '(utf-8-unix . utf-8-unix)))
+;(use-package emacs
+ ; :init
+ ; (set-charset-priority 'unicode)
+  ;(setq locale-coding-system 'utf-8
+  ;      coding-system-for-read 'utf-8
+  ;      coding-system-for-write 'utf-8)
+  ;(set-terminal-coding-system 'utf-8)
+  ;(set-keyboard-coding-system 'utf-8)
+  ;(set-selection-coding-system 'utf-8)
+  ;(prefer-coding-system 'utf-8)
+  ;(setq default-process-coding-system '(utf-8-unix . utf-8-unix)))
 
 ;; Use spaces by default, and set tab width to 2
 (use-package emacs
@@ -199,6 +207,9 @@
 ;; 设置Tex
 (add-to-list 'load-path "~/.emacs.d/plugins")
 (require 'init-tex)
+
+;; 设置chinese-gbk
+;(require 'chinese-gbk)
 
 
 ;; 打开一个Shell窗口
@@ -528,3 +539,5 @@
 
 (add-hook 'post-command-hook 'my-check-idle-time)
 
+
+(modify-coding-system-alist 'file "\\.txt\\'" 'gbk)
