@@ -442,21 +442,21 @@
 
 
 ;; 自定义emacs主题
-(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
+;(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
 ;(load-theme 'material t)
 ; (load-theme 'nord t)
 ;(load-theme 'afternoon t)
 ;(load-theme 'melancholy t)
-(load-theme 'kanagawa t)
-        (customize-set-variable 'timu-caribbean-scale-org-document-title 1.4)
-        (customize-set-variable 'timu-caribbean-scale-org-document-info 1.4)
-        (customize-set-variable 'timu-caribbean-scale-org-level-1 1.2)
-        (customize-set-variable 'timu-caribbean-scale-org-level-2 1.1)
-        (customize-set-variable 'timu-caribbean-scale-org-level-3 1)
-        (customize-set-variable 'timu-spacegrey-org-intense-colors t)
-        (customize-set-variable 'timu-spacegrey-muted-colors t)
-        (customize-set-variable 'timu-spacegrey-contrasted-foreground t)
-        (customize-set-variable 'timu-caribbean-mode-line-border nil)
+;;(load-theme 'kanagawa t)
+;;        (customize-set-variable 'timu-caribbean-scale-org-document-title 1.4)
+;;        (customize-set-variable 'timu-caribbean-scale-org-document-info 1.4)
+;;        (customize-set-variable 'timu-caribbean-scale-org-level-1 1.2)
+;;        (customize-set-variable 'timu-caribbean-scale-org-level-2 1.1)
+;;        (customize-set-variable 'timu-caribbean-scale-org-level-3 1)
+;;        (customize-set-variable 'timu-spacegrey-org-intense-colors t)
+;;        (customize-set-variable 'timu-spacegrey-muted-colors t)
+;;        (customize-set-variable 'timu-spacegrey-contrasted-foreground t)
+;;        (customize-set-variable 'timu-caribbean-mode-line-border nil)
 	;(timu-line-mode 0)
 ;(load-theme 'timu-spacegrey t)
 
@@ -469,16 +469,16 @@
 ;(require 'nano-theme-dark.el)
 ;(require 'nano-splash.el)
 ;(require 'nano-command.el)
-;;(use-package nano-emacs
-;;  :demand
-;;  :no-require t
-;;  :straight (:host github :repo "rougier/nano-emacs")
-;;  :defines (nano-font-family-monospaced nano-font-size)
-;;  :bind ("C-M-z" . nano-toggle-theme)
-;;  :config
-;;  (setq nano-font-family-monospaced "Fira Code")
-;;  (setq nano-font-size 14)
-;;  (require 'nano))
+(use-package nano-emacs
+  :demand
+  :no-require t
+  :straight (:host github :repo "rougier/nano-emacs")
+  :defines (nano-font-family-monospaced nano-font-size)
+  :bind ("C-M-z" . nano-toggle-theme)
+  :config
+  (setq nano-font-family-monospaced "Fira Code")
+  (setq nano-font-size 14)
+  (require 'nano))
 
 
 

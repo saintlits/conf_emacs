@@ -469,16 +469,16 @@
 ;(require 'nano-theme-dark.el)
 ;(require 'nano-splash.el)
 ;(require 'nano-command.el)
-;;(use-package nano-emacs
-;;  :demand
-;;  :no-require t
-;;  :straight (:host github :repo "rougier/nano-emacs")
-;;  :defines (nano-font-family-monospaced nano-font-size)
-;;  :bind ("C-M-z" . nano-toggle-theme)
-;;  :config
-;;  (setq nano-font-family-monospaced "Fira Code")
-;;  (setq nano-font-size 14)
-;;  (require 'nano))
+(use-package nano-emacs
+  :demand
+  :no-require t
+  :straight (:host github :repo "rougier/nano-emacs")
+  :defines (nano-font-family-monospaced nano-font-size)
+  :bind ("C-M-z" . nano-toggle-theme)
+  :config
+  (setq nano-font-family-monospaced "Fira Code")
+  (setq nano-font-size 14)
+  (require 'nano))
 
 
 
