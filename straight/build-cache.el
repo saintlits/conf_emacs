@@ -1,9 +1,9 @@
 
 :tanat
 
-"29.2"
+"29.3"
 
-#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2024-04-10 04:14:53" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2024-04-10 04:14:53" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2024-04-10 04:14:53" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "nongnu-elpa" ("2024-04-10 04:14:53" nil (:type git :repo "https://git.savannah.gnu.org/git/emacs/nongnu.git" :depth (full single-branch) :local-repo "nongnu-elpa" :build nil :package "nongnu-elpa")) "el-get" ("2024-04-10 04:14:53" nil (:type git :host github :repo "dimitri/el-get" :build nil :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :flavor melpa :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2024-04-10 04:14:53" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2024-04-10 04:14:53" ("emacs") (:type git :host github :repo "radian-software/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "use-package" ("2024-04-10 04:14:53" ("emacs" "bind-key") (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "bind-key" ("2024-04-10 04:14:53" ("emacs") (:flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :package "bind-key" :local-repo "use-package" :type git :repo "jwiegley/use-package" :host github)) "evil" ("2024-04-10 04:14:53" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2024-04-10 04:14:53" ("emacs") (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "doom-themes" ("2024-04-10 04:14:53" ("emacs" "cl-lib") (:type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes" :package "doom-themes" :local-repo "themes")) "doom-modeline" ("2024-04-10 04:14:53" ("emacs" "compat" "nerd-icons" "shrink-path") (:type git :flavor melpa :host github :repo "seagle0128/doom-modeline" :package "doom-modeline" :local-repo "doom-modeline")) "compat" ("2024-04-10 04:14:53" ("emacs" "seq") (:type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git")) :package "compat" :local-repo "compat")) "seq" ("2024-04-10 04:14:53" nil (:type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git")) :package "seq" :local-repo "seq")) "nerd-icons" ("2024-04-10 04:14:53" ("emacs") (:type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el" :package "nerd-icons" :local-repo "nerd-icons.el")) "shrink-path" ("2024-04-10 04:14:53" ("emacs" "s" "dash" "f") (:type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el" :package "shrink-path" :local-repo "shrink-path.el")) "s" ("2024-04-10 04:14:53" nil (:type git :flavor melpa :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "dash" ("2024-04-10 04:14:53" ("emacs") (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "f" ("2024-04-10 04:14:53" ("emacs" "s" "dash") (:type git :flavor melpa :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "nyan-mode" ("2024-04-10 04:14:53" ("emacs") (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "auctex" ("2024-04-10 04:14:53" ("emacs") (:type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git")) :package "auctex" :local-repo "auctex")) "org-roam" ("2024-04-10 04:14:53" ("emacs" "dash" "org" "emacsql" "magit-section") (:type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam" :package "org-roam" :local-repo "org-roam")) "org" ("2024-04-10 04:14:53" ("emacs") (:type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*")) :package "org")) "emacsql" ("2024-04-10 04:14:53" ("emacs") (:type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql" :package "emacsql" :local-repo "emacsql")) "magit-section" ("2024-04-10 04:14:53" ("emacs" "compat" "dash") (:type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit" :package "magit-section" :local-repo "magit")) "org-roam-ui" ("2024-04-10 04:14:53" ("emacs" "org-roam" "simple-httpd" "websocket") (:host github :repo "org-roam/org-roam-ui" :branch "main" :files ("*.el" "out") :flavor melpa :package "org-roam-ui" :type git :local-repo "org-roam-ui")) "simple-httpd" ("2024-04-10 04:14:53" ("cl-lib") (:type git :flavor melpa :host github :repo "skeeto/emacs-web-server" :package "simple-httpd" :local-repo "emacs-web-server")) "websocket" ("2024-04-10 04:14:53" ("cl-lib") (:type git :flavor melpa :host github :repo "ahyatt/emacs-websocket" :package "websocket" :local-repo "emacs-websocket")) "multiple-cursors" ("2024-04-10 04:14:53" ("cl-lib") (:type git :flavor melpa :host github :repo "magnars/multiple-cursors.el" :package "multiple-cursors" :local-repo "multiple-cursors.el")) "deft" ("2024-04-10 04:14:53" nil (:type git :flavor melpa :host github :repo "jrblevin/deft" :package "deft" :local-repo "deft")) "consult-notes" ("2024-02-20 06:36:37" ("emacs" "consult" "s" "dash") (:type git :host github :repo "mclear-tools/consult-notes" :flavor melpa :package "consult-notes" :local-repo "consult-notes")) "consult" ("2024-04-10 04:14:53" ("emacs" "compat") (:type git :flavor melpa :host github :repo "minad/consult" :package "consult" :local-repo "consult")) "consult-org-roam" ("2024-04-10 04:14:53" ("emacs" "org-roam" "consult") (:type git :flavor melpa :host github :repo "jgru/consult-org-roam" :package "consult-org-roam" :local-repo "consult-org-roam")) "org-bullets" ("2024-04-10 04:14:53" nil (:type git :flavor melpa :host github :repo "integral-dw/org-bullets" :package "org-bullets" :local-repo "org-bullets")) "rust-mode" ("2024-02-28 22:06:31" ("emacs") (:type git :flavor melpa :host github :repo "rust-lang/rust-mode" :package "rust-mode" :local-repo "rust-mode")) "sketch-mode" ("2024-04-10 04:14:53" nil (:type git :host github :repo "emacs-straight/sketch-mode" :files ("*" (:exclude ".git")) :package "sketch-mode" :local-repo "sketch-mode")) "nano-emacs" ("2024-04-10 04:14:53" nil (:host github :repo "rougier/nano-emacs" :package "nano-emacs" :type git :local-repo "nano-emacs")) "mini-frame" ("2024-03-17 18:43:08" ("emacs") (:type git :flavor melpa :host github :repo "muffinmad/emacs-mini-frame" :package "mini-frame" :local-repo "emacs-mini-frame")) "ts" ("2024-03-17 18:58:07" ("emacs" "dash" "s") (:type git :flavor melpa :host github :repo "alphapapa/ts.el" :package "ts" :local-repo "ts.el"))))
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2024-05-29 22:56:07" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2024-05-29 22:56:07" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2024-05-29 22:56:07" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "nongnu-elpa" ("2024-05-29 22:56:07" nil (:type git :repo "https://git.savannah.gnu.org/git/emacs/nongnu.git" :depth (full single-branch) :local-repo "nongnu-elpa" :build nil :package "nongnu-elpa")) "el-get" ("2024-05-29 22:56:07" nil (:type git :host github :repo "dimitri/el-get" :build nil :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :flavor melpa :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2024-05-29 22:56:07" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2024-05-29 22:56:07" ("emacs") (:type git :host github :repo "radian-software/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "use-package" ("2024-05-29 22:56:07" ("emacs" "bind-key") (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "bind-key" ("2024-05-29 22:56:07" ("emacs") (:flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :package "bind-key" :local-repo "use-package" :type git :repo "jwiegley/use-package" :host github)) "evil" ("2024-05-29 22:56:07" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2024-05-29 22:56:07" ("emacs") (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "doom-themes" ("2024-05-29 22:56:07" ("emacs" "cl-lib") (:type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes" :package "doom-themes" :local-repo "themes")) "doom-modeline" ("2024-05-29 22:56:07" ("emacs" "compat" "nerd-icons" "shrink-path") (:type git :flavor melpa :host github :repo "seagle0128/doom-modeline" :package "doom-modeline" :local-repo "doom-modeline")) "compat" ("2024-05-29 22:56:07" ("emacs" "seq") (:type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git")) :package "compat" :local-repo "compat")) "seq" ("2024-05-29 22:56:07" nil (:type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git")) :package "seq" :local-repo "seq")) "nerd-icons" ("2024-05-29 22:56:07" ("emacs") (:type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el" :package "nerd-icons" :local-repo "nerd-icons.el")) "shrink-path" ("2024-05-29 22:56:07" ("emacs" "s" "dash" "f") (:type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el" :package "shrink-path" :local-repo "shrink-path.el")) "s" ("2024-05-29 22:56:07" nil (:type git :flavor melpa :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "dash" ("2024-05-29 22:56:07" ("emacs") (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "f" ("2024-05-29 22:56:07" ("emacs" "s" "dash") (:type git :flavor melpa :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "nyan-mode" ("2024-05-29 22:56:07" ("emacs") (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "auctex" ("2024-05-29 22:56:07" ("emacs") (:type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git")) :package "auctex" :local-repo "auctex")) "org-roam" ("2024-05-29 22:56:07" ("emacs" "dash" "org" "emacsql" "magit-section") (:type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam" :package "org-roam" :local-repo "org-roam")) "org" ("2024-05-29 22:56:07" ("emacs") (:type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*")) :package "org")) "emacsql" ("2024-05-29 22:56:07" ("emacs") (:type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql" :package "emacsql" :local-repo "emacsql")) "magit-section" ("2024-05-29 22:56:07" ("emacs" "compat" "dash") (:type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit" :package "magit-section" :local-repo "magit")) "org-roam-ui" ("2024-05-29 22:56:07" ("emacs" "org-roam" "simple-httpd" "websocket") (:host github :repo "org-roam/org-roam-ui" :branch "main" :files ("*.el" "out") :flavor melpa :package "org-roam-ui" :type git :local-repo "org-roam-ui")) "simple-httpd" ("2024-05-29 22:56:07" ("cl-lib") (:type git :flavor melpa :host github :repo "skeeto/emacs-web-server" :package "simple-httpd" :local-repo "emacs-web-server")) "websocket" ("2024-05-29 22:56:07" ("cl-lib") (:type git :flavor melpa :host github :repo "ahyatt/emacs-websocket" :package "websocket" :local-repo "emacs-websocket")) "consult-org-roam" ("2024-05-29 22:56:07" ("emacs" "org-roam" "consult") (:type git :flavor melpa :host github :repo "jgru/consult-org-roam" :package "consult-org-roam" :local-repo "consult-org-roam")) "consult" ("2024-05-29 22:56:07" ("emacs" "compat") (:type git :flavor melpa :host github :repo "minad/consult" :package "consult" :local-repo "consult")) "org-bullets" ("2024-05-29 22:56:07" nil (:type git :flavor melpa :host github :repo "integral-dw/org-bullets" :package "org-bullets" :local-repo "org-bullets")) "multiple-cursors" ("2024-05-29 22:56:07" ("cl-lib") (:type git :flavor melpa :host github :repo "magnars/multiple-cursors.el" :package "multiple-cursors" :local-repo "multiple-cursors.el")) "deft" ("2024-05-29 22:56:07" nil (:type git :flavor melpa :host github :repo "jrblevin/deft" :package "deft" :local-repo "deft")) "sketch-mode" ("2024-05-29 22:56:07" nil (:type git :host github :repo "emacs-straight/sketch-mode" :files ("*" (:exclude ".git")) :package "sketch-mode" :local-repo "sketch-mode")) "nano-emacs" ("2024-05-29 19:34:48" nil (:host github :repo "rougier/nano-emacs" :package "nano-emacs" :type git :local-repo "nano-emacs")) "all-the-icons" ("2024-05-29 22:56:07" ("emacs") (:type git :flavor melpa :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el" :package "all-the-icons" :local-repo "all-the-icons.el"))))
 
 #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-x straight-ert-print-hack straight-autoloads straight) (autoload 'straight-remove-unused-repos "straight" "Remove unused repositories from the repos and build directories.
 A repo is considered \"unused\" if it was not explicitly requested via
@@ -1115,206 +1115,7 @@ evaluate `(default-value \\='org-roam-ui-follow-mode)'.
 The mode's hook is called both when the mode is enabled and when
 it is disabled.
 
-(fn &optional ARG)" t) (register-definition-prefixes "org-roam-ui" '("img/:file" "node/:id" "org-roam-ui-")) (provide 'org-roam-ui-autoloads)) "multiple-cursors" ((mc-mark-pop multiple-cursors-core multiple-cursors-pkg multiple-cursors mc-mark-more multiple-cursors-autoloads mc-hide-unmatched-lines-mode mc-cycle-cursors mc-separate-operations mc-edit-lines rectangular-region-mode) (register-definition-prefixes "mc-cycle-cursors" '("mc/")) (autoload 'mc/edit-lines "mc-edit-lines" "Add one cursor to each line of the active region.
-Starts from mark and moves in straight down or up towards the
-line point is on.
-
-What is done with lines which are not long enough is governed by
-`mc/edit-lines-empty-lines'.  The prefix argument ARG can be used
-to override this.  If ARG is a symbol (when called from Lisp),
-that symbol is used instead of `mc/edit-lines-empty-lines'.
-Otherwise, if ARG negative, short lines will be ignored.  Any
-other non-nil value will cause short lines to be padded.
-
-(fn &optional ARG)" t) (autoload 'mc/edit-ends-of-lines "mc-edit-lines" "Add one cursor to the end of each line in the active region." t) (autoload 'mc/edit-beginnings-of-lines "mc-edit-lines" "Add one cursor to the beginning of each line in the active region." t) (register-definition-prefixes "mc-edit-lines" '("mc/edit-lines-empty-lines")) (autoload 'mc-hide-unmatched-lines-mode "mc-hide-unmatched-lines-mode" "Minor mode when enabled hides all lines where no cursors (and
-
-also hum/lines-to-expand below and above) To make use of this
-mode press \"C-'\" while multiple-cursor-mode is active. You can
-still edit lines while you are in mc-hide-unmatched-lines
-mode. To leave this mode press <return> or \"C-g\"
-
-This is a minor mode.  If called interactively, toggle the
-`Mc-Hide-Unmatched-Lines mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `mc-hide-unmatched-lines-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (register-definition-prefixes "mc-hide-unmatched-lines-mode" '("hum/")) (autoload 'mc/mark-next-like-this "mc-mark-more" "Find and mark the next part of the buffer matching the currently active region
-If no region is active add a cursor on the next line
-With negative ARG, delete the last one instead.
-With zero ARG, skip the last one and mark next.
-
-(fn ARG)" t) (autoload 'mc/mark-next-like-this-word "mc-mark-more" "Find and mark the next part of the buffer matching the currently active region
-If no region is active, mark the word at the point and find the next match
-With negative ARG, delete the last one instead.
-With zero ARG, skip the last one and mark next.
-
-(fn ARG)" t) (autoload 'mc/mark-next-word-like-this "mc-mark-more" "Find and mark the next word of the buffer matching the currently active region
-The matching region must be a whole word to be a match
-If no region is active add a cursor on the next line
-With negative ARG, delete the last one instead.
-With zero ARG, skip the last one and mark next.
-
-(fn ARG)" t) (autoload 'mc/mark-next-symbol-like-this "mc-mark-more" "Find and mark the next symbol of the buffer matching the currently active region
-The matching region must be a whole symbol to be a match
-If no region is active add a cursor on the next line
-With negative ARG, delete the last one instead.
-With zero ARG, skip the last one and mark next.
-
-(fn ARG)" t) (autoload 'mc/mark-previous-like-this "mc-mark-more" "Find and mark the previous part of the buffer matching the
-currently active region.
-
-If no region is active ,add a cursor on the previous line.
-
-With negative ARG, delete the last one instead.
-
-With zero ARG, skip the last one and mark next.
-
-(fn ARG)" t) (autoload 'mc/mark-previous-like-this-word "mc-mark-more" "Find and mark the previous part of the buffer matching the
-currently active region.
-
-If no region is active, mark the word at the point and find the
-previous match.
-
-With negative ARG, delete the last one instead.
-
-With zero ARG, skip the last one and mark previous.
-
-(fn ARG)" t) (autoload 'mc/mark-previous-word-like-this "mc-mark-more" "Find and mark the previous part of the buffer matching the
-currently active region.
-
-The matching region must be a whole word to be a match.
-
-If no region is active, add a cursor on the previous line.
-
-With negative ARG, delete the last one instead.
-
-With zero ARG, skip the last one and mark next.
-
-(fn ARG)" t) (autoload 'mc/mark-previous-symbol-like-this "mc-mark-more" "Find and mark the previous part of the buffer matching
-the currently active region.
-
-The matching region must be a whole symbol to be a match.
-
-If no region is active add a cursor on the previous line.
-
-With negative ARG, delete the last one instead.
-
-With zero ARG, skip the last one and mark next.
-
-(fn ARG)" t) (autoload 'mc/mark-next-lines "mc-mark-more" "
-
-(fn ARG)" t) (autoload 'mc/mark-previous-lines "mc-mark-more" "
-
-(fn ARG)" t) (autoload 'mc/unmark-next-like-this "mc-mark-more" "Deselect next part of the buffer matching the currently active region." t) (autoload 'mc/unmark-previous-like-this "mc-mark-more" "Deselect prev part of the buffer matching the currently active region." t) (autoload 'mc/skip-to-next-like-this "mc-mark-more" "Skip the current one and select the next part of the buffer
-matching the currently active region." t) (autoload 'mc/skip-to-previous-like-this "mc-mark-more" "Skip the current one and select the prev part of the buffer
-matching the currently active region." t) (autoload 'mc/mark-all-like-this "mc-mark-more" "Find and mark all the parts of the buffer matching the currently active region" t) (autoload 'mc/mark-all-words-like-this "mc-mark-more" nil t) (autoload 'mc/mark-all-symbols-like-this "mc-mark-more" nil t) (autoload 'mc/mark-all-in-region "mc-mark-more" "Find and mark all the parts in the region matching the given search
-
-(fn BEG END &optional SEARCH)" t) (autoload 'mc/mark-all-in-region-regexp "mc-mark-more" "Find and mark all the parts in the region matching the given regexp.
-
-(fn BEG END)" t) (autoload 'mc/mark-more-like-this-extended "mc-mark-more" "Like mark-more-like-this, but then lets you adjust with arrow keys.
-The adjustments work like this:
-
-   <up>    Mark previous like this and set direction to 'up
-   <down>  Mark next like this and set direction to 'down
-
-If direction is 'up:
-
-   <left>  Skip past the cursor furthest up
-   <right> Remove the cursor furthest up
-
-If direction is 'down:
-
-   <left>  Remove the cursor furthest down
-   <right> Skip past the cursor furthest down
-
-The bindings for these commands can be changed.
-See `mc/mark-more-like-this-extended-keymap'." t) (autoload 'mc/mark-all-like-this-dwim "mc-mark-more" "Tries to guess what you want to mark all of.
-Can be pressed multiple times to increase selection.
-
-With prefix, it behaves the same as original `mc/mark-all-like-this'
-
-(fn ARG)" t) (autoload 'mc/mark-all-dwim "mc-mark-more" "Tries even harder to guess what you want to mark all of.
-
-If the region is active and spans multiple lines, it will behave
-as if `mc/mark-all-in-region'. With the prefix ARG, it will call
-`mc/edit-lines' instead.
-
-If the region is inactive or on a single line, it will behave like
-`mc/mark-all-like-this-dwim'.
-
-(fn ARG)" t) (autoload 'mc/mark-all-like-this-in-defun "mc-mark-more" "Mark all like this in defun." t) (autoload 'mc/mark-all-words-like-this-in-defun "mc-mark-more" "Mark all words like this in defun." t) (autoload 'mc/mark-all-symbols-like-this-in-defun "mc-mark-more" "Mark all symbols like this in defun." t) (autoload 'mc/toggle-cursor-on-click "mc-mark-more" "Add a cursor where you click, or remove a fake cursor that is
-already there.
-
-(fn EVENT)" t) (defalias 'mc/add-cursor-on-click 'mc/toggle-cursor-on-click) (autoload 'mc/mark-sgml-tag-pair "mc-mark-more" "Mark the tag we're in and its pair for renaming." t) (register-definition-prefixes "mc-mark-more" '("mc--" "mc/")) (autoload 'mc/mark-pop "mc-mark-pop" "Add a cursor at the current point, pop off mark ring and jump
-to the popped mark." t) (autoload 'mc/insert-numbers "mc-separate-operations" "Insert increasing numbers for each cursor, starting at
-`mc/insert-numbers-default' or ARG.
-
-(fn ARG)" t) (autoload 'mc/insert-letters "mc-separate-operations" "Insert increasing letters for each cursor, starting at 0 or ARG.
-     Where letter[0]=a letter[2]=c letter[26]=aa
-
-(fn ARG)" t) (autoload 'mc/reverse-regions "mc-separate-operations" nil t) (autoload 'mc/sort-regions "mc-separate-operations" nil t) (autoload 'mc/vertical-align "mc-separate-operations" "Aligns all cursors vertically with a given CHARACTER to the one with the
-highest column number (the rightest).
-Might not behave as intended if more than one cursors are on the same line.
-
-(fn CHARACTER)" t) (autoload 'mc/vertical-align-with-space "mc-separate-operations" "Aligns all cursors with whitespace like `mc/vertical-align' does" t) (register-definition-prefixes "mc-separate-operations" '("mc--" "mc/insert-numbers-default")) (autoload 'activate-cursor-for-undo "multiple-cursors-core" "Called when undoing to temporarily activate the fake cursor
-which action is being undone.
-
-(fn ID)") (autoload 'multiple-cursors-mode "multiple-cursors-core" "Mode while multiple cursors are active.
-
-This is a minor mode.  If called interactively, toggle the
-`Multiple-Cursors mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `multiple-cursors-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (register-definition-prefixes "multiple-cursors-core" '("deactivate-cursor-after-undo" "mc--" "mc/" "unsupported-cmd")) (autoload 'set-rectangular-region-anchor "rectangular-region-mode" "Anchors the rectangular region at point.
-
-Think of this one as `set-mark' except you're marking a
-rectangular region. It is an exceedingly quick way of adding
-multiple cursors to multiple lines." t) (autoload 'rectangular-region-mode "rectangular-region-mode" "A mode for creating a rectangular region to edit
-
-This is a minor mode.  If called interactively, toggle the
-`Rectangular-Region mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `rectangular-region-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (register-definition-prefixes "rectangular-region-mode" '("rectangular-region-mode" "rrm/")) (provide 'multiple-cursors-autoloads)) "deft" ((deft-autoloads deft) (autoload 'deft-find-file "deft" "Find FILE interactively using the minibuffer.
-FILE must exist and be a relative or absolute path, with extension.
-If FILE is not inside `deft-directory', fall back to using `find-file'.
-
-(fn FILE)" t) (autoload 'deft-new-file "deft" "Create a new file quickly.
-Use either an automatically generated filename or the filter string if non-nil
-and `deft-use-filter-string-for-filename' is set.  If the filter string is
-non-nil and title is not from filename, use it as the title." t) (autoload 'deft "deft" "Switch to *Deft* buffer and load files." t) (register-definition-prefixes "deft" '("deft-" "org-deft-store-link")) (provide 'deft-autoloads)) "consult" ((consult-compile consult consult-flymake consult-info consult-xref consult-org consult-register consult-kmacro consult-imenu consult-autoloads) (autoload 'consult-completion-in-region "consult" "Use minibuffer completion as the UI for `completion-at-point'.
+(fn &optional ARG)" t) (register-definition-prefixes "org-roam-ui" '("img/:file" "node/:id" "org-roam-ui-")) (provide 'org-roam-ui-autoloads)) "consult" ((consult-compile consult consult-flymake consult-info consult-xref consult-org consult-register consult-kmacro consult-imenu consult-autoloads) (autoload 'consult-completion-in-region "consult" "Use minibuffer completion as the UI for `completion-at-point'.
 
 The function is called with 4 arguments: START END COLLECTION PREDICATE.
 The arguments and expected return value are as specified for
@@ -1611,79 +1412,7 @@ This function can be used for `xref-show-xrefs-function'.
 See `xref-show-xrefs-function' for the description of the
 FETCHER and ALIST arguments.
 
-(fn FETCHER &optional ALIST)") (register-definition-prefixes "consult-xref" '("consult-xref--")) (provide 'consult-autoloads)) "consult-notes" ((consult-notes-autoloads consult-notes-org-headings consult-notes consult-notes-denote consult-notes-org-roam) (autoload 'consult-notes--file-dir-source "consult-notes" "Generate the notes source for each directory of files in `consult-notes-dir-sources'.
-
- Return a notes source list suitable for `consult--multi'.
-NAME is the source name, CHAR is the narrowing character,
-and DIR is the directory to find notes.
-
-(fn NAME CHAR DIR)") (autoload 'consult-notes--file-dir-annotate "consult-notes" "Annotate file CAND with its directory DIR, size, and modification time.
-
-(fn NAME DIR CAND)") (autoload 'consult-notes--make-file-dir-sources "consult-notes" "Add generated `consult--multi' sources to list of all sources.") (defvar consult-notes-denote-mode nil "Non-nil if Consult-Notes-Denote mode is enabled.
-See the `consult-notes-denote-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `consult-notes-denote-mode'.") (custom-autoload 'consult-notes-denote-mode "consult-notes" nil) (autoload 'consult-notes-denote-mode "consult-notes" "Toggle `consult-notes-denote-mode' to integrate consult with denote.
-
-This is a global minor mode.  If called interactively, toggle the
-`Consult-Notes-Denote mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `(default-value \\='consult-notes-denote-mode)'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (defvar consult-notes-org-roam-mode nil "Non-nil if Consult-Notes-Org-Roam mode is enabled.
-See the `consult-notes-org-roam-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `consult-notes-org-roam-mode'.") (custom-autoload 'consult-notes-org-roam-mode "consult-notes" nil) (autoload 'consult-notes-org-roam-mode "consult-notes" "Toggle `consult-notes-org-roam-mode' to integrate consult with org-roam.
-
-By enabling `consult-notes-org-roam-mode' the functions
-`org-roam-node-read' and `org-roam-ref-read' are overriden by
-consult-notes' org-roam equivalents. Optional argument ARG indicates
-whether the mode should be enabled or disabled.
-
-(fn &optional ARG)" t) (defvar consult-notes-org-headings-mode nil "Non-nil if Consult-Notes-Org-Headings mode is enabled.
-See the `consult-notes-org-headings-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `consult-notes-org-headings-mode'.") (custom-autoload 'consult-notes-org-headings-mode "consult-notes" nil) (autoload 'consult-notes-org-headings-mode "consult-notes" "Toggle `consult-notes-org-headings-mode'.
-
-This is a global minor mode.  If called interactively, toggle the
-`Consult-Notes-Org-Headings mode' mode.  If the prefix argument
-is positive, enable the mode, and if it is zero or negative,
-disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `(default-value \\='consult-notes-org-headings-mode)'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (autoload 'consult-notes-search-in-all-notes "consult-notes" "Search in all notes using `grep' or `ripgrep'.
-Which search function is used depends on the value of `consult-notes-use-rg'." t) (autoload 'consult-notes "consult-notes" "Find a file in a notes directory with consult-multi, or from SOURCES.
-
-(fn &optional SOURCES)" t) (register-definition-prefixes "consult-notes" '("consult-notes-")) (register-definition-prefixes "consult-notes-denote" '("consult-notes-denote-")) (register-definition-prefixes "consult-notes-org-headings" '("consult-")) (autoload 'consult-notes-org-roam-find-node-relation "consult-notes-org-roam" "Navigate org-roam notes by link relation.
-
-With universal ARG tries to navigate the tags of the current
-note. Optionally takes a selected NODE and filepaths CHOICES.
-
-(fn ARG &optional NODE CHOICES)" t) (register-definition-prefixes "consult-notes-org-roam" '("consult-notes-org-roam-")) (provide 'consult-notes-autoloads)) "consult-org-roam" ((consult-org-roam-buffer consult-org-roam-autoloads consult-org-roam) (autoload 'consult-org-roam-search "consult-org-roam" "Search org-roam directory using `consult-org-roam-grep-func' with live-preview.
+(fn FETCHER &optional ALIST)") (register-definition-prefixes "consult-xref" '("consult-xref--")) (provide 'consult-autoloads)) "consult-org-roam" ((consult-org-roam-buffer consult-org-roam-autoloads consult-org-roam) (autoload 'consult-org-roam-search "consult-org-roam" "Search org-roam directory using `consult-org-roam-grep-func' with live-preview.
 With an option for INITIAL input when called non-interactively.
 The function is restricted to files with .org-suffix.
 
@@ -1727,43 +1456,245 @@ evaluate `org-bullets-mode'.
 The mode's hook is called both when the mode is enabled and when
 it is disabled.
 
-(fn &optional ARG)" t) (register-definition-prefixes "org-bullets" '("org-bullets-")) (provide 'org-bullets-autoloads)) "rust-mode" ((rust-mode-treesitter rust-compile rust-utils rust-common rust-playpen rust-cargo rust-mode-autoloads rust-mode rust-prog-mode rust-rustfmt) (register-definition-prefixes "rust-cargo" '("rust-")) (register-definition-prefixes "rust-common" '("rust-")) (register-definition-prefixes "rust-compile" '("cargo-compilation-regexps" "rustc-")) (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode)) (register-definition-prefixes "rust-mode" '("rust-")) (when (version<= "29.1" emacs-version) (require 'treesit) (require 'rust-ts-mode) (require 'rust-common) (define-derived-mode rust-mode rust-ts-mode "Rust" "Major mode for Rust code.
+(fn &optional ARG)" t) (register-definition-prefixes "org-bullets" '("org-bullets-")) (provide 'org-bullets-autoloads)) "multiple-cursors" ((mc-mark-pop multiple-cursors-core multiple-cursors-pkg multiple-cursors mc-mark-more multiple-cursors-autoloads mc-hide-unmatched-lines-mode mc-cycle-cursors mc-separate-operations mc-edit-lines rectangular-region-mode) (register-definition-prefixes "mc-cycle-cursors" '("mc/")) (autoload 'mc/edit-lines "mc-edit-lines" "Add one cursor to each line of the active region.
+Starts from mark and moves in straight down or up towards the
+line point is on.
 
-\\{rust-mode-map}" :group 'rust-mode (add-hook 'before-save-hook rust-before-save-hook nil t) (add-hook 'after-save-hook rust-after-save-hook nil t))) (register-definition-prefixes "rust-playpen" '("rust-")) (autoload 'rust-mode "rust-prog-mode" "Major mode for Rust code.
+What is done with lines which are not long enough is governed by
+`mc/edit-lines-empty-lines'.  The prefix argument ARG can be used
+to override this.  If ARG is a symbol (when called from Lisp),
+that symbol is used instead of `mc/edit-lines-empty-lines'.
+Otherwise, if ARG negative, short lines will be ignored.  Any
+other non-nil value will cause short lines to be padded.
 
-\\{rust-mode-map}
+(fn &optional ARG)" t) (autoload 'mc/edit-ends-of-lines "mc-edit-lines" "Add one cursor to the end of each line in the active region." t) (autoload 'mc/edit-beginnings-of-lines "mc-edit-lines" "Add one cursor to the beginning of each line in the active region." t) (register-definition-prefixes "mc-edit-lines" '("mc/edit-lines-empty-lines")) (autoload 'mc-hide-unmatched-lines-mode "mc-hide-unmatched-lines-mode" "Minor mode when enabled hides all lines where no cursors (and
 
-(fn)" t) (register-definition-prefixes "rust-prog-mode" '("rust-")) (register-definition-prefixes "rust-rustfmt" '("rust-")) (autoload 'rust-dbg-wrap-or-unwrap "rust-utils" "Either remove or add the dbg! macro." t) (register-definition-prefixes "rust-utils" '("rust-")) (provide 'rust-mode-autoloads)) "sketch-mode" ((sketch-mode-autoloads sketch-mode) (autoload 'sketch "sketch-mode" "Initialize or switch to (new) SVG image.
-With prefix ARG, create sketch using default (customizable)
-values
+also hum/lines-to-expand below and above) To make use of this
+mode press \"C-'\" while multiple-cursor-mode is active. You can
+still edit lines while you are in mc-hide-unmatched-lines
+mode. To leave this mode press <return> or \"C-g\"
 
-(fn ARG)" t) (register-definition-prefixes "sketch-mode" '("list-colors-display" "read-color-web" "show-layers" "sketch-" "svg-")) (provide 'sketch-mode-autoloads)) "nano-emacs" ((nano-theme nano-defaults nano-help nano-bindings nano-theme-dark nano-theme-light nano-layout nano-faces nano-command nano-compact nano-modeline nano-colors nano-agenda nano-base-colors nano-minibuffer nano-emacs-autoloads nano-counsel nano nano-writer nano-session nano-splash nano-mu4e) (register-definition-prefixes "nano-agenda" '("center-string" "nano-agenda")) (register-definition-prefixes "nano-base-colors" '("nano-")) (register-definition-prefixes "nano-bindings" '("nano--delete-frame-or-kill-emacs" "new-frame")) (register-definition-prefixes "nano-colors" '("material-color" "nord-color" "open-color")) (register-definition-prefixes "nano-command" '("nano-c")) (register-definition-prefixes "nano-compact" '("nano-modeline-compose")) (register-definition-prefixes "nano-defaults" '("copy-from-osx" "paste-to-osx")) (register-definition-prefixes "nano-faces" '("nano-")) (register-definition-prefixes "nano-help" '("nano-")) (register-definition-prefixes "nano-modeline" '("buffer-menu-mode-header-line" "nano-mode" "shorten-directory" "vc-branch")) (register-definition-prefixes "nano-mu4e" '("-mu4e-resize-headers-window" "mu4e-" "nano-mu4e-dashboard-colors")) (register-definition-prefixes "nano-session" '("unpropertize-kill-ring")) (register-definition-prefixes "nano-splash" '("center-string" "mac-animation-" "nano-splash")) (register-definition-prefixes "nano-theme" '("nano-" "set-face")) (register-definition-prefixes "nano-theme-dark" '("nano-theme-set-dark")) (register-definition-prefixes "nano-theme-light" '("nano-theme-set-light")) (autoload 'writer-mode "nano-writer" "
-
-(fn)" t) (register-definition-prefixes "nano-writer" '("writer-mode--")) (provide 'nano-emacs-autoloads)) "mini-frame" ((mini-frame-autoloads mini-frame) (defvar mini-frame-mode nil "Non-nil if Mini-Frame mode is enabled.
-See the `mini-frame-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `mini-frame-mode'.") (custom-autoload 'mini-frame-mode "mini-frame" nil) (autoload 'mini-frame-mode "mini-frame" "Show minibuffer in child frame on read-from-minibuffer.
-
-This is a global minor mode.  If called interactively, toggle the
-`Mini-Frame mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
+This is a minor mode.  If called interactively, toggle the
+`Mc-Hide-Unmatched-Lines mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
 
 If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
 the mode if ARG is nil, omitted, or is a positive number.
 Disable the mode if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `(default-value \\='mini-frame-mode)'.
+evaluate `mc-hide-unmatched-lines-mode'.
 
 The mode's hook is called both when the mode is enabled and when
 it is disabled.
 
-(fn &optional ARG)" t) (register-definition-prefixes "mini-frame" '("mini-frame-")) (provide 'mini-frame-autoloads)) "ts" ((ts-autoloads ts) (register-definition-prefixes "ts" '("ts-" "ts<" "ts=" "ts>")) (provide 'ts-autoloads))))
+(fn &optional ARG)" t) (register-definition-prefixes "mc-hide-unmatched-lines-mode" '("hum/")) (autoload 'mc/mark-next-like-this "mc-mark-more" "Find and mark the next part of the buffer matching the currently active region
+If no region is active add a cursor on the next line
+With negative ARG, delete the last one instead.
+With zero ARG, skip the last one and mark next.
 
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 15 "melpa" nil "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "use-package" nil "bind-key" nil "evil" nil "goto-chg" nil "cl-lib" nil "doom-themes" nil "doom-modeline" nil "compat" nil "seq" nil "nerd-icons" nil "shrink-path" nil "s" nil "dash" nil "f" nil "nyan-mode" nil "auctex" nil "reftex" nil "org-roam" nil "org" (org :type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*"))) "emacsql" nil "magit-section" nil "org-roam-ui" nil "simple-httpd" nil "websocket" nil "multiple-cursors" nil "deft" nil "consult-notes" nil "consult" nil "consult-org-roam" nil "nord-themes" nil "org-bullets" nil "rust-mode" nil "sketch-mode" nil "nano-emacs" nil "mini-frame" nil "ts" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" (el-get :type git :flavor melpa :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "bind-key" (bind-key :type git :flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :host github :repo "jwiegley/use-package") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "cl-lib" nil "doom-themes" (doom-themes :type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes") "doom-modeline" (doom-modeline :type git :flavor melpa :host github :repo "seagle0128/doom-modeline") "compat" nil "seq" nil "nerd-icons" (nerd-icons :type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el") "shrink-path" (shrink-path :type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el") "s" (s :type git :flavor melpa :host github :repo "magnars/s.el") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :host github :repo "rejeep/f.el") "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode") "auctex" nil "reftex" nil "org-roam" (org-roam :type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam") "emacsql" (emacsql :type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql") "magit-section" (magit-section :type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit") "org-roam-ui" (org-roam-ui :type git :flavor melpa :files (:defaults "out" "org-roam-ui-pkg.el") :host github :repo "org-roam/org-roam-ui") "simple-httpd" (simple-httpd :type git :flavor melpa :host github :repo "skeeto/emacs-web-server") "websocket" (websocket :type git :flavor melpa :host github :repo "ahyatt/emacs-websocket") "multiple-cursors" (multiple-cursors :type git :flavor melpa :host github :repo "magnars/multiple-cursors.el") "deft" (deft :type git :flavor melpa :host github :repo "jrblevin/deft") "consult-notes" (consult-notes :type git :flavor melpa :host github :repo "mclear-tools/consult-notes") "consult" (consult :type git :flavor melpa :host github :repo "minad/consult") "consult-org-roam" (consult-org-roam :type git :flavor melpa :host github :repo "jgru/consult-org-roam") "nord-themes" nil "org-bullets" (org-bullets :type git :flavor melpa :host github :repo "integral-dw/org-bullets") "rust-mode" (rust-mode :type git :flavor melpa :host github :repo "rust-lang/rust-mode") "sketch-mode" nil "nano-emacs" nil "mini-frame" (mini-frame :type git :flavor melpa :host github :repo "muffinmad/emacs-mini-frame") "ts" (ts :type git :flavor melpa :host github :repo "alphapapa/ts.el"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "nongnu-elpa" nil "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "compat" (compat :type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git"))) "seq" (seq :type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git"))) "auctex" (auctex :type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git"))) "reftex" nil "nord-themes" nil "sketch-mode" (sketch-mode :type git :host github :repo "emacs-straight/sketch-mode" :files ("*" (:exclude ".git"))) "nano-emacs" nil)) nongnu-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 4 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "reftex" nil "nord-themes" nil "nano-emacs" nil)) el-get #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "reftex" nil "nord-themes" nil "nano-emacs" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "reftex" nil "nord-themes" nil "nano-emacs" nil))))
+(fn ARG)" t) (autoload 'mc/mark-next-like-this-word "mc-mark-more" "Find and mark the next part of the buffer matching the currently active region
+If no region is active, mark the word at the point and find the next match
+With negative ARG, delete the last one instead.
+With zero ARG, skip the last one and mark next.
 
-("nano-emacs" "sketch-mode" "deft" "multiple-cursors" "org-bullets" "consult" "consult-org-roam" "websocket" "simple-httpd" "org-roam-ui" "magit-section" "emacsql" "org" "org-roam" "reftex" "auctex" "nyan-mode" "f" "dash" "s" "shrink-path" "nerd-icons" "seq" "compat" "doom-modeline" "doom-themes" "cl-lib" "goto-chg" "evil" "bind-key" "use-package" "emacs" "straight" "emacsmirror-mirror" "el-get" "nongnu-elpa" "gnu-elpa-mirror" "melpa" "org-elpa")
+(fn ARG)" t) (autoload 'mc/mark-next-word-like-this "mc-mark-more" "Find and mark the next word of the buffer matching the currently active region
+The matching region must be a whole word to be a match
+If no region is active add a cursor on the next line
+With negative ARG, delete the last one instead.
+With zero ARG, skip the last one and mark next.
+
+(fn ARG)" t) (autoload 'mc/mark-next-symbol-like-this "mc-mark-more" "Find and mark the next symbol of the buffer matching the currently active region
+The matching region must be a whole symbol to be a match
+If no region is active add a cursor on the next line
+With negative ARG, delete the last one instead.
+With zero ARG, skip the last one and mark next.
+
+(fn ARG)" t) (autoload 'mc/mark-previous-like-this "mc-mark-more" "Find and mark the previous part of the buffer matching the
+currently active region.
+
+If no region is active ,add a cursor on the previous line.
+
+With negative ARG, delete the last one instead.
+
+With zero ARG, skip the last one and mark next.
+
+(fn ARG)" t) (autoload 'mc/mark-previous-like-this-word "mc-mark-more" "Find and mark the previous part of the buffer matching the
+currently active region.
+
+If no region is active, mark the word at the point and find the
+previous match.
+
+With negative ARG, delete the last one instead.
+
+With zero ARG, skip the last one and mark previous.
+
+(fn ARG)" t) (autoload 'mc/mark-previous-word-like-this "mc-mark-more" "Find and mark the previous part of the buffer matching the
+currently active region.
+
+The matching region must be a whole word to be a match.
+
+If no region is active, add a cursor on the previous line.
+
+With negative ARG, delete the last one instead.
+
+With zero ARG, skip the last one and mark next.
+
+(fn ARG)" t) (autoload 'mc/mark-previous-symbol-like-this "mc-mark-more" "Find and mark the previous part of the buffer matching
+the currently active region.
+
+The matching region must be a whole symbol to be a match.
+
+If no region is active add a cursor on the previous line.
+
+With negative ARG, delete the last one instead.
+
+With zero ARG, skip the last one and mark next.
+
+(fn ARG)" t) (autoload 'mc/mark-next-lines "mc-mark-more" "
+
+(fn ARG)" t) (autoload 'mc/mark-previous-lines "mc-mark-more" "
+
+(fn ARG)" t) (autoload 'mc/unmark-next-like-this "mc-mark-more" "Deselect next part of the buffer matching the currently active region." t) (autoload 'mc/unmark-previous-like-this "mc-mark-more" "Deselect prev part of the buffer matching the currently active region." t) (autoload 'mc/skip-to-next-like-this "mc-mark-more" "Skip the current one and select the next part of the buffer
+matching the currently active region." t) (autoload 'mc/skip-to-previous-like-this "mc-mark-more" "Skip the current one and select the prev part of the buffer
+matching the currently active region." t) (autoload 'mc/mark-all-like-this "mc-mark-more" "Find and mark all the parts of the buffer matching the currently active region" t) (autoload 'mc/mark-all-words-like-this "mc-mark-more" nil t) (autoload 'mc/mark-all-symbols-like-this "mc-mark-more" nil t) (autoload 'mc/mark-all-in-region "mc-mark-more" "Find and mark all the parts in the region matching the given search
+
+(fn BEG END &optional SEARCH)" t) (autoload 'mc/mark-all-in-region-regexp "mc-mark-more" "Find and mark all the parts in the region matching the given regexp.
+
+(fn BEG END)" t) (autoload 'mc/mark-more-like-this-extended "mc-mark-more" "Like mark-more-like-this, but then lets you adjust with arrow keys.
+The adjustments work like this:
+
+   <up>    Mark previous like this and set direction to 'up
+   <down>  Mark next like this and set direction to 'down
+
+If direction is 'up:
+
+   <left>  Skip past the cursor furthest up
+   <right> Remove the cursor furthest up
+
+If direction is 'down:
+
+   <left>  Remove the cursor furthest down
+   <right> Skip past the cursor furthest down
+
+The bindings for these commands can be changed.
+See `mc/mark-more-like-this-extended-keymap'." t) (autoload 'mc/mark-all-like-this-dwim "mc-mark-more" "Tries to guess what you want to mark all of.
+Can be pressed multiple times to increase selection.
+
+With prefix, it behaves the same as original `mc/mark-all-like-this'
+
+(fn ARG)" t) (autoload 'mc/mark-all-dwim "mc-mark-more" "Tries even harder to guess what you want to mark all of.
+
+If the region is active and spans multiple lines, it will behave
+as if `mc/mark-all-in-region'. With the prefix ARG, it will call
+`mc/edit-lines' instead.
+
+If the region is inactive or on a single line, it will behave like
+`mc/mark-all-like-this-dwim'.
+
+(fn ARG)" t) (autoload 'mc/mark-all-like-this-in-defun "mc-mark-more" "Mark all like this in defun." t) (autoload 'mc/mark-all-words-like-this-in-defun "mc-mark-more" "Mark all words like this in defun." t) (autoload 'mc/mark-all-symbols-like-this-in-defun "mc-mark-more" "Mark all symbols like this in defun." t) (autoload 'mc/toggle-cursor-on-click "mc-mark-more" "Add a cursor where you click, or remove a fake cursor that is
+already there.
+
+(fn EVENT)" t) (defalias 'mc/add-cursor-on-click 'mc/toggle-cursor-on-click) (autoload 'mc/mark-sgml-tag-pair "mc-mark-more" "Mark the tag we're in and its pair for renaming." t) (register-definition-prefixes "mc-mark-more" '("mc--" "mc/")) (autoload 'mc/mark-pop "mc-mark-pop" "Add a cursor at the current point, pop off mark ring and jump
+to the popped mark." t) (autoload 'mc/insert-numbers "mc-separate-operations" "Insert increasing numbers for each cursor, starting at
+`mc/insert-numbers-default' or ARG.
+
+(fn ARG)" t) (autoload 'mc/insert-letters "mc-separate-operations" "Insert increasing letters for each cursor, starting at 0 or ARG.
+     Where letter[0]=a letter[2]=c letter[26]=aa
+
+(fn ARG)" t) (autoload 'mc/reverse-regions "mc-separate-operations" nil t) (autoload 'mc/sort-regions "mc-separate-operations" nil t) (autoload 'mc/vertical-align "mc-separate-operations" "Aligns all cursors vertically with a given CHARACTER to the one with the
+highest column number (the rightest).
+Might not behave as intended if more than one cursors are on the same line.
+
+(fn CHARACTER)" t) (autoload 'mc/vertical-align-with-space "mc-separate-operations" "Aligns all cursors with whitespace like `mc/vertical-align' does" t) (register-definition-prefixes "mc-separate-operations" '("mc--" "mc/insert-numbers-default")) (autoload 'activate-cursor-for-undo "multiple-cursors-core" "Called when undoing to temporarily activate the fake cursor
+which action is being undone.
+
+(fn ID)") (autoload 'multiple-cursors-mode "multiple-cursors-core" "Mode while multiple cursors are active.
+
+This is a minor mode.  If called interactively, toggle the
+`Multiple-Cursors mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `multiple-cursors-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t) (register-definition-prefixes "multiple-cursors-core" '("deactivate-cursor-after-undo" "mc--" "mc/" "unsupported-cmd")) (autoload 'set-rectangular-region-anchor "rectangular-region-mode" "Anchors the rectangular region at point.
+
+Think of this one as `set-mark' except you're marking a
+rectangular region. It is an exceedingly quick way of adding
+multiple cursors to multiple lines." t) (autoload 'rectangular-region-mode "rectangular-region-mode" "A mode for creating a rectangular region to edit
+
+This is a minor mode.  If called interactively, toggle the
+`Rectangular-Region mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `rectangular-region-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t) (register-definition-prefixes "rectangular-region-mode" '("rectangular-region-mode" "rrm/")) (provide 'multiple-cursors-autoloads)) "deft" ((deft-autoloads deft) (autoload 'deft-find-file "deft" "Find FILE interactively using the minibuffer.
+FILE must exist and be a relative or absolute path, with extension.
+If FILE is not inside `deft-directory', fall back to using `find-file'.
+
+(fn FILE)" t) (autoload 'deft-new-file "deft" "Create a new file quickly.
+Use either an automatically generated filename or the filter string if non-nil
+and `deft-use-filter-string-for-filename' is set.  If the filter string is
+non-nil and title is not from filename, use it as the title." t) (autoload 'deft "deft" "Switch to *Deft* buffer and load files." t) (register-definition-prefixes "deft" '("deft-" "org-deft-store-link")) (provide 'deft-autoloads)) "sketch-mode" ((sketch-mode-autoloads sketch-mode) (autoload 'sketch "sketch-mode" "Initialize or switch to (new) SVG image.
+With prefix ARG, create sketch using default (customizable)
+values
+
+(fn ARG)" t) (register-definition-prefixes "sketch-mode" '("list-colors-display" "read-color-web" "show-layers" "sketch-" "svg-")) (provide 'sketch-mode-autoloads)) "nano-emacs" ((nano-theme nano-defaults nano-help nano-bindings nano-theme-dark nano-theme-light nano-layout nano-faces nano-command nano-compact nano-modeline nano-colors nano-agenda nano-base-colors nano-minibuffer nano-emacs-autoloads nano-counsel nano nano-writer nano-session nano-splash nano-mu4e) (register-definition-prefixes "nano-agenda" '("center-string" "nano-agenda")) (register-definition-prefixes "nano-base-colors" '("nano-")) (register-definition-prefixes "nano-bindings" '("nano--delete-frame-or-kill-emacs" "new-frame")) (register-definition-prefixes "nano-colors" '("material-color" "nord-color" "open-color")) (register-definition-prefixes "nano-command" '("nano-c")) (register-definition-prefixes "nano-compact" '("nano-modeline-compose")) (register-definition-prefixes "nano-defaults" '("copy-from-osx" "paste-to-osx")) (register-definition-prefixes "nano-faces" '("nano-")) (register-definition-prefixes "nano-help" '("nano-")) (register-definition-prefixes "nano-modeline" '("buffer-menu-mode-header-line" "nano-mode" "shorten-directory" "vc-branch")) (register-definition-prefixes "nano-mu4e" '("-mu4e-resize-headers-window" "mu4e-" "nano-mu4e-dashboard-colors")) (register-definition-prefixes "nano-session" '("unpropertize-kill-ring")) (register-definition-prefixes "nano-splash" '("center-string" "mac-animation-" "nano-splash")) (register-definition-prefixes "nano-theme" '("nano-" "set-face")) (register-definition-prefixes "nano-theme-dark" '("nano-theme-set-dark")) (register-definition-prefixes "nano-theme-light" '("nano-theme-set-light")) (autoload 'writer-mode "nano-writer" "
+
+(fn)" t) (register-definition-prefixes "nano-writer" '("writer-mode--")) (provide 'nano-emacs-autoloads)) "all-the-icons" ((all-the-icons-faces all-the-icons all-the-icons-autoloads) (autoload 'all-the-icons-icon-for-dir "all-the-icons" "Get the formatted icon for DIR.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+Note: You want chevron, please use `all-the-icons-icon-for-dir-with-chevron'.
+
+(fn DIR &rest ARG-OVERRIDES)") (autoload 'all-the-icons-icon-for-file "all-the-icons" "Get the formatted icon for FILE.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn FILE &rest ARG-OVERRIDES)") (autoload 'all-the-icons-icon-for-mode "all-the-icons" "Get the formatted icon for MODE.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn MODE &rest ARG-OVERRIDES)") (autoload 'all-the-icons-icon-for-url "all-the-icons" "Get the formatted icon for URL.
+If an icon for URL isn't found in `all-the-icons-url-alist', a globe is used.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn URL &rest ARG-OVERRIDES)") (autoload 'all-the-icons-install-fonts "all-the-icons" "Helper function to download and install the latests fonts based on OS.
+When PFX is non-nil, ignore the prompt and just install
+
+(fn &optional PFX)" t) (autoload 'all-the-icons-insert "all-the-icons" "Interactive icon insertion function.
+When Prefix ARG is non-nil, insert the propertized icon.
+When FAMILY is non-nil, limit the candidates to the icon set matching it.
+
+(fn &optional ARG FAMILY)" t) (register-definition-prefixes "all-the-icons" '("all-the-icons-")) (provide 'all-the-icons-autoloads))))
+
+#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 15 "melpa" nil "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "use-package" nil "bind-key" nil "evil" nil "goto-chg" nil "cl-lib" nil "doom-themes" nil "doom-modeline" nil "compat" nil "seq" nil "nerd-icons" nil "shrink-path" nil "s" nil "dash" nil "f" nil "nyan-mode" nil "auctex" nil "reftex" nil "org-roam" nil "org" (org :type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*"))) "emacsql" nil "magit-section" nil "org-roam-ui" nil "simple-httpd" nil "websocket" nil "consult-org-roam" nil "consult" nil "org-bullets" nil "multiple-cursors" nil "deft" nil "sketch-mode" nil "nano-emacs" nil "all-the-icons" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" (el-get :type git :flavor melpa :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "bind-key" (bind-key :type git :flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :host github :repo "jwiegley/use-package") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "cl-lib" nil "doom-themes" (doom-themes :type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes") "doom-modeline" (doom-modeline :type git :flavor melpa :host github :repo "seagle0128/doom-modeline") "compat" nil "seq" nil "nerd-icons" (nerd-icons :type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el") "shrink-path" (shrink-path :type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el") "s" (s :type git :flavor melpa :host github :repo "magnars/s.el") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :host github :repo "rejeep/f.el") "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode") "auctex" nil "reftex" nil "org-roam" (org-roam :type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam") "emacsql" (emacsql :type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql") "magit-section" (magit-section :type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit") "org-roam-ui" (org-roam-ui :type git :flavor melpa :files (:defaults "out" "org-roam-ui-pkg.el") :host github :repo "org-roam/org-roam-ui") "simple-httpd" (simple-httpd :type git :flavor melpa :host github :repo "skeeto/emacs-web-server") "websocket" (websocket :type git :flavor melpa :host github :repo "ahyatt/emacs-websocket") "consult-org-roam" (consult-org-roam :type git :flavor melpa :host github :repo "jgru/consult-org-roam") "consult" (consult :type git :flavor melpa :host github :repo "minad/consult") "org-bullets" (org-bullets :type git :flavor melpa :host github :repo "integral-dw/org-bullets") "multiple-cursors" (multiple-cursors :type git :flavor melpa :host github :repo "magnars/multiple-cursors.el") "deft" (deft :type git :flavor melpa :host github :repo "jrblevin/deft") "sketch-mode" nil "nano-emacs" nil "all-the-icons" (all-the-icons :type git :flavor melpa :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "nongnu-elpa" nil "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "compat" (compat :type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git"))) "seq" (seq :type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git"))) "auctex" (auctex :type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git"))) "reftex" nil "sketch-mode" (sketch-mode :type git :host github :repo "emacs-straight/sketch-mode" :files ("*" (:exclude ".git"))) "nano-emacs" nil)) nongnu-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 4 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "reftex" nil "nano-emacs" nil)) el-get #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "reftex" nil "nano-emacs" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "reftex" nil "nano-emacs" nil))))
+
+("all-the-icons" "sketch-mode" "deft" "multiple-cursors" "org-bullets" "consult" "consult-org-roam" "websocket" "simple-httpd" "org-roam-ui" "magit-section" "emacsql" "org" "org-roam" "reftex" "auctex" "nyan-mode" "f" "dash" "s" "shrink-path" "nerd-icons" "seq" "compat" "doom-modeline" "doom-themes" "cl-lib" "goto-chg" "evil" "bind-key" "use-package" "emacs" "straight" "emacsmirror-mirror" "el-get" "nongnu-elpa" "gnu-elpa-mirror" "melpa" "org-elpa")
 
 t

@@ -559,3 +559,8 @@
 ;;      (message "Enabled theme %s" theme-name))))
 ;;
 ;;(global-set-key (kbd "C-+") 'cycle-themes)
+(global-set-key (kbd "M-j") 'org-roam-dailies-capture-today)
+(global-set-key (kbd "M-n") 'org-roam-dailies-goto-next-note)
+(global-set-key (kbd "M-p") 'org-roam-dailies-goto-previous-note)
+(global-set-key (kbd "M-h") 'previous-buffer)
+(global-set-key (kbd "M-l") 'next-buffer)

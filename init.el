@@ -13,6 +13,7 @@
 (add-to-list 'default-frame-alist '(width . 110))   ; 设置宽度为80列
 (add-to-list 'default-frame-alist '(height . 45))  ; 设置高度为40行
 
+
 ;; Font
 ;  (set-face-attribute 'default nil 
 ;    ;; :font "PragmataPro Mono Liga" 
@@ -58,10 +59,6 @@
   (package-install 'use-package))
 (require 'use-package)
 
-;; 重设按键绑定
-(global-set-key (kbd "M-j") 'org-roam-dailies-capture-today)
-(global-set-key (kbd "M-n") 'org-roam-dailies-goto-next-note)
-(global-set-key (kbd "M-p") 'org-roam-dailies-goto-previous-note)
 
 ;; 安装Markdown模式
 (use-package markdown-mode
@@ -233,7 +230,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("b754d3a03c34cfba9ad7991380d26984ebd0761925773530e24d8dd8b6894738" "f5f80dd6588e59cfc3ce2f11568ff8296717a938edd448a947f9823a4e282b66" "4990532659bb6a285fee01ede3dfa1b1bdf302c5c3c8de9fad9b6bc63a9252f7" "6f1f6a1a3cff62cc860ad6e787151b9b8599f4471d40ed746ea2819fcd184e1a" "014cb63097fc7dbda3edf53eb09802237961cbb4c9e9abd705f23b86511b0a69" "b5fd9c7429d52190235f2383e47d340d7ff769f141cd8f9e7a4629a81abc6b19" "b30ab3b30e70f4350dad6bfe27366d573ace2190cc405c619bd5e602110c6e0c" "317b5f321d72b4ff9c465ceb343758c23b2a9465df33929accea63f414cedbaa" default))
+   '("774218d0781ca9aad07888de412eac35b7920bafc10ecc014ecf493d7a74b310" "b754d3a03c34cfba9ad7991380d26984ebd0761925773530e24d8dd8b6894738" "f5f80dd6588e59cfc3ce2f11568ff8296717a938edd448a947f9823a4e282b66" "4990532659bb6a285fee01ede3dfa1b1bdf302c5c3c8de9fad9b6bc63a9252f7" "6f1f6a1a3cff62cc860ad6e787151b9b8599f4471d40ed746ea2819fcd184e1a" "014cb63097fc7dbda3edf53eb09802237961cbb4c9e9abd705f23b86511b0a69" "b5fd9c7429d52190235f2383e47d340d7ff769f141cd8f9e7a4629a81abc6b19" "b30ab3b30e70f4350dad6bfe27366d573ace2190cc405c619bd5e602110c6e0c" "317b5f321d72b4ff9c465ceb343758c23b2a9465df33929accea63f414cedbaa" default))
  '(ignored-local-variable-values '((TeX-master . t)))
  '(org-agenda-files '("~/ywq_doc/journals/2024-03-16.org"))
  '(org-capture-templates
@@ -559,3 +556,41 @@
 ;;      (message "Enabled theme %s" theme-name))))
 ;;
 ;;(global-set-key (kbd "C-+") 'cycle-themes)
+
+
+
+;; 重设按键绑定
+
+(global-set-key (kbd "M-j") 'org-roam-dailies-capture-today)
+(global-set-key (kbd "M-n") 'org-roam-dailies-goto-next-note)
+(global-set-key (kbd "M-p") 'org-roam-dailies-goto-previous-note)
+(global-set-key (kbd "M-h") 'previous-buffer)
+(global-set-key (kbd "M-l") 'next-buffer)
+
+;;; 调整状态栏
+;(setq mode-line-format
+;      '("%e" mode-line-front-space
+;        mode-line-mule-info mode-line-client mode-line-modified mode-line-remote
+;        mode-line-frame-identification mode-line-buffer-identification "   "
+;        mode-line-position
+;        (vc-mode vc-mode) "  "
+;        mode-line-modes mode-line-misc-info mode-line-end-spaces))
+;
+;(defun my-mode-line-icon ()
+;  "Set a custom icon for the mode line."
+;  (let ((icon (cond ((derived-mode-p 'lisp-mode) "λ")
+;                    ((derived-mode-p 'emacs-lisp-mode) "EL")
+;                    ;; 其他模式可以在这里添加
+;                    (t ""))))
+;    (setq mode-line-process icon)))
+;
+;(add-hook 'after-change-major-mode-hook 'my-mode-line-icon)
+
+   (use-package all-the-icons
+     :ensure t
+     :config
+     (setq all-the-icons-mode-icon-alist
+           '(("lisp-mode" . (all-the-icons-faicon "code")))))
+
+(insert (all-the-icons-icon-for-file "foo.js"))
+

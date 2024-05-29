@@ -12,6 +12,7 @@
         evil-find-char
         evil-force-normal-state
         evil-forward-char
+        evil-goto-line
         evil-insert
         evil-next-line
         evil-normal-state
