@@ -19,9 +19,19 @@
 ;    ;; :font "PragmataPro Mono Liga" 
 ;    :font "Fira Code"
 ;    :height 118)
-(set-face-attribute 'default nil :font (font-spec :family "Fira Code" :size 16))
+;; 最佳配置
+;(set-face-attribute 'default nil :font (font-spec :family "Fira Code" :size 16))
+;(set-fontset-font t 'unicode (font-spec :family "Noto Color Emoji" :size 14))
+;(set-fontset-font t '(#x2ff0 . #x9ffc) (font-spec :font "三极行楷简体-粗" :size 16 :weight 'regular))
+;; 完美搭配
+(set-face-attribute 'default nil :font (font-spec :family "GoMono Nerd Font" :size 20))
 (set-fontset-font t 'unicode (font-spec :family "Noto Color Emoji" :size 14))
-(set-fontset-font t '(#x2ff0 . #x9ffc) (font-spec :font "xinyijixiangsong" :size 17 :weight 'regular))
+(set-fontset-font t '(#x2ff0 . #x9ffc) (font-spec :font "三极行楷简体-粗" :size 18 :weight 'regular))
+;(set-fontset-font t '(#x2ff0 . #x9ffc) (font-spec :font "xinyijixiangsong" :size 17 :weight 'regular))
+;; 其他配置
+;(set-face-attribute 'default nil :font (font-spec :family "IBM Plex Mono" :size 16))
+;(set-fontset-font t 'unicode (font-spec :family "Noto Color Emoji" :size 14))
+;(set-fontset-font t '(#x2ff0 . #x9ffc) (font-spec :font "三极行楷简体-粗" :size 16 :weight 'regular))
 
 ;; 换行
 (global-visual-line-mode t)
@@ -519,14 +529,15 @@
 (defun my-start-snow ()
    "Start snow if not already started."
   (unless (timerp my-snow-timer)
-    (setq my-snow-timer (run-with-idle-timer 600 t 'snow))))
+    (setq my-snow-timer (run-with-idle-timer 120 t 'snow))))
 
 (defun my-stop-snow ()
    "Stop snow if running."
   (when (timerp my-snow-timer)
     (cancel-timer my-snow-timer)
     (setq my-snow-timer nil)
-    (kill-buffer "*snow*"))
+    (if (get-buffer "*snow*")
+    (kill-buffer "*snow*")))
   (my-start-snow))
 
 (defun my-check-idle-time ()
@@ -594,3 +605,7 @@
 
 (insert (all-the-icons-icon-for-file "foo.js"))
 
+;; env bound
+(load (expand-file-name "API_KEYS.el"))
+(setenv "G" "/home/saint/code/shell/gpts.sh")
+(setenv "g" "/home/saint/code/shell/gpts.sh")
