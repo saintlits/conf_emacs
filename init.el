@@ -606,6 +606,6 @@
 (insert (all-the-icons-icon-for-file "foo.js"))
 
 ;; env bound
-(load (expand-file-name "API_KEYS.el"))
+(load   "~/.emacs.d/API_KEYS.el")
 (setenv "G" "/home/saint/code/shell/gpts.sh")
 (setenv "g" "/home/saint/code/shell/gpts.sh")
