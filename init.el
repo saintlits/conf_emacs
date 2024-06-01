@@ -206,7 +206,7 @@
 
 ;; sly mode
 (require 'sly-autoloads)
-(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq inferior-lisp-program "/usr/bin/sbcl --dynamic-space-size 8Gb  ")
 (add-hook 'lisp-mode-hook 'sly-editing-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -689,6 +689,21 @@
            (goto-char (sp-get current-level :end))
            (insert ")"))
        (message "No enclosing expression found."))))
+
+ ;; 自定义函数：在当前表达式的层级中删除括号
+(defun delete-pair-at-current-level ()
+  "Delete pair of parentheses at the current expression level."
+  (interactive)
+  (let ((current-level (sp-get-enclosing-sexp)))
+    (if current-level
+        (progn
+          (goto-char (sp-get current-level :end))
+          (delete-char -1)
+          (goto-char (sp-get current-level :beg))
+          (delete-char 1))
+      (message "No enclosing expression found."))))
+
+
  ;; 自定义函数：在当前位置插入括号
  (defun insert-pair-at-position ()
   "Insert pair of parentheses at the current cursor position and at the end of the line."
@@ -697,11 +712,13 @@
     (let ((line-end (line-end-position)))
       (insert "(")
       (goto-char line-end)
-      (insert ")"))))
+      (insert ")")))
+  (forward-char 1))
 
  
  ;; 绑定自定义函数到快捷键
  (define-key sp-keymap (kbd "C-(") 'insert-pair-at-line-start-and-end)
  ;(define-key sp-keymap (kbd "C-M-(") 'insert-pair-at-current-level)
  (define-key sp-keymap (kbd "C-M-(") 'insert-pair-at-position)
+ (define-key sp-keymap (kbd "S-<backspace>") 'delete-pair-at-current-level)
  
