@@ -639,3 +639,17 @@
   (global-set-key (kbd "C-<return>") 'lisp-indent-adjust-parens)
   (global-set-key (kbd "M-<return>") 'lisp-dedent-adjust-parens)
 
+;; 智能匹配括号
+(package-install 'smartparens)
+;(require 'smartparens-config)
+(smartparens-global-mode t)
+
+;; 启用严格模式，输入左括号时会自动补全右括号
+(setq sp-autoinsert-pair t)
+(setq sp-autodelete-pair t)
+
+;; 添加一些额外的配置来确保括号的严格匹配
+(sp-local-pair 'emacs-lisp-mode "(" ")" :actions '(insert wrap))
+(sp-local-pair 'emacs-lisp-mode "[" "]" :actions '(insert wrap))
+(sp-local-pair 'emacs-lisp-mode "{" "}" :actions '(insert wrap))
+
