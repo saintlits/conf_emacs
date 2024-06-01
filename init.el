@@ -639,17 +639,69 @@
   (global-set-key (kbd "C-<return>") 'lisp-indent-adjust-parens)
   (global-set-key (kbd "M-<return>") 'lisp-dedent-adjust-parens)
 
-;; 智能匹配括号
-(package-install 'smartparens)
-;(require 'smartparens-config)
-(smartparens-global-mode t)
+;;; 智能匹配括号
+ ;(package-install 'smartparens)
+ (require 'smartparens-config)
+ (smartparens-global-mode t)
+ 
+ ;; 启用严格模式，这样你输入一个左括号时会自动补全右括号
+ (setq sp-autoinsert-pair t)
+ (setq sp-autodelete-pair t)
+ 
+ ;; 启用严格删除模式，这样删除一个括号会自动删除匹配的括号
+ (setq sp-autodelete-pair t)
+ 
+ ;; 自动平衡括号
+ (setq sp-autodelete-pair t)
+ (setq sp-autoskip-closing-pair 'always)
+ 
+ ;; 配置适用于 Emacs Lisp 模式的括号
+ (sp-local-pair 'emacs-lisp-mode "(" ")" :actions '(insert wrap navigate))
+ (sp-local-pair 'emacs-lisp-mode "[" "]" :actions '(insert wrap navigate))
+ (sp-local-pair 'emacs-lisp-mode "{" "}" :actions '(insert wrap navigate))
+ (sp-local-pair 'common-lisp-mode "(" ")" :actions '(insert wrap navigate))
+ (sp-local-pair 'common-lisp-mode "[" "]" :actions '(insert wrap navigate))
+ (sp-local-pair 'common-lisp-mode "{" "}" :actions '(insert wrap navigate))
+ 
+ ;; 删除模式
+ (define-key sp-keymap (kbd "C-d") 'sp-delete-char)
+ (define-key sp-keymap (kbd "C-<backspace>") 'sp-backward-delete-char)
+ 
+ ;; 自定义函数：在行首和行尾插入括号
+ (defun insert-pair-at-line-start-and-end ()
+   "Insert pair of parentheses at the beginning and end of the current line."
+   (interactive)
+   (save-excursion
+     (beginning-of-line)
+     (insert "(")
+     (end-of-line)
+     (insert ")")))
+ 
+ ;; 自定义函数：在当前表达式的层级中插入括号
+ (defun insert-pair-at-current-level ()
+   "Insert pair of parentheses at the current expression level."
+   (interactive)
+   (let ((current-level (sp-get-enclosing-sexp)))
+     (if current-level
+         (progn
+           (goto-char (sp-get current-level :beg))
+           (insert "(")
+           (goto-char (sp-get current-level :end))
+           (insert ")"))
+       (message "No enclosing expression found."))))
+ ;; 自定义函数：在当前位置插入括号
+ (defun insert-pair-at-position ()
+  "Insert pair of parentheses at the current cursor position and at the end of the line."
+  (interactive)
+  (save-excursion
+    (let ((line-end (line-end-position)))
+      (insert "(")
+      (goto-char line-end)
+      (insert ")"))))
 
-;; 启用严格模式，输入左括号时会自动补全右括号
-(setq sp-autoinsert-pair t)
-(setq sp-autodelete-pair t)
-
-;; 添加一些额外的配置来确保括号的严格匹配
-(sp-local-pair 'emacs-lisp-mode "(" ")" :actions '(insert wrap))
-(sp-local-pair 'emacs-lisp-mode "[" "]" :actions '(insert wrap))
-(sp-local-pair 'emacs-lisp-mode "{" "}" :actions '(insert wrap))
-
+ 
+ ;; 绑定自定义函数到快捷键
+ (define-key sp-keymap (kbd "C-(") 'insert-pair-at-line-start-and-end)
+ ;(define-key sp-keymap (kbd "C-M-(") 'insert-pair-at-current-level)
+ (define-key sp-keymap (kbd "C-M-(") 'insert-pair-at-position)
+ 
