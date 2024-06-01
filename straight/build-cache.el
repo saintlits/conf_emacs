@@ -3,7 +3,7 @@
 
 "29.3"
 
-#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2024-06-01 06:10:08" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2024-06-01 06:10:08" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2024-06-01 06:10:08" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "nongnu-elpa" ("2024-06-01 06:10:08" nil (:type git :repo "https://git.savannah.gnu.org/git/emacs/nongnu.git" :depth (full single-branch) :local-repo "nongnu-elpa" :build nil :package "nongnu-elpa")) "el-get" ("2024-06-01 06:10:08" nil (:type git :host github :repo "dimitri/el-get" :build nil :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :flavor melpa :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2024-06-01 06:10:08" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2024-06-01 06:10:08" ("emacs") (:type git :host github :repo "radian-software/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "use-package" ("2024-06-01 06:10:08" ("emacs" "bind-key") (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "bind-key" ("2024-06-01 06:10:08" ("emacs") (:flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :package "bind-key" :local-repo "use-package" :type git :repo "jwiegley/use-package" :host github)) "evil" ("2024-06-01 06:10:08" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2024-06-01 06:10:08" ("emacs") (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "doom-themes" ("2024-06-01 06:10:08" ("emacs" "cl-lib") (:type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes" :package "doom-themes" :local-repo "themes")) "doom-modeline" ("2024-06-01 06:10:08" ("emacs" "compat" "nerd-icons" "shrink-path") (:type git :flavor melpa :host github :repo "seagle0128/doom-modeline" :package "doom-modeline" :local-repo "doom-modeline")) "compat" ("2024-06-01 06:10:08" ("emacs" "seq") (:type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git")) :package "compat" :local-repo "compat")) "seq" ("2024-06-01 06:10:08" nil (:type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git")) :package "seq" :local-repo "seq")) "nerd-icons" ("2024-06-01 06:10:08" ("emacs") (:type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el" :package "nerd-icons" :local-repo "nerd-icons.el")) "shrink-path" ("2024-06-01 06:10:08" ("emacs" "s" "dash" "f") (:type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el" :package "shrink-path" :local-repo "shrink-path.el")) "s" ("2024-06-01 06:10:08" nil (:type git :flavor melpa :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "dash" ("2024-06-01 06:10:08" ("emacs") (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "f" ("2024-06-01 06:10:08" ("emacs" "s" "dash") (:type git :flavor melpa :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "nyan-mode" ("2024-06-01 06:10:09" ("emacs") (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "auctex" ("2024-06-01 06:10:09" ("emacs") (:type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git")) :package "auctex" :local-repo "auctex")) "org-roam" ("2024-06-01 06:10:09" ("emacs" "dash" "org" "emacsql" "magit-section") (:type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam" :package "org-roam" :local-repo "org-roam")) "org" ("2024-06-01 06:10:09" ("emacs") (:type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*")) :package "org")) "emacsql" ("2024-06-01 06:10:09" ("emacs") (:type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql" :package "emacsql" :local-repo "emacsql")) "magit-section" ("2024-06-01 06:10:09" ("emacs" "compat" "dash") (:type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit" :package "magit-section" :local-repo "magit")) "org-roam-ui" ("2024-06-01 06:10:09" ("emacs" "org-roam" "simple-httpd" "websocket") (:host github :repo "org-roam/org-roam-ui" :branch "main" :files ("*.el" "out") :flavor melpa :package "org-roam-ui" :type git :local-repo "org-roam-ui")) "simple-httpd" ("2024-06-01 06:10:09" ("cl-lib") (:type git :flavor melpa :host github :repo "skeeto/emacs-web-server" :package "simple-httpd" :local-repo "emacs-web-server")) "websocket" ("2024-06-01 06:10:09" ("cl-lib") (:type git :flavor melpa :host github :repo "ahyatt/emacs-websocket" :package "websocket" :local-repo "emacs-websocket")) "consult-org-roam" ("2024-06-01 06:10:09" ("emacs" "org-roam" "consult") (:type git :flavor melpa :host github :repo "jgru/consult-org-roam" :package "consult-org-roam" :local-repo "consult-org-roam")) "consult" ("2024-06-01 06:10:09" ("emacs" "compat") (:type git :flavor melpa :host github :repo "minad/consult" :package "consult" :local-repo "consult")) "org-bullets" ("2024-06-01 06:10:09" nil (:type git :flavor melpa :host github :repo "integral-dw/org-bullets" :package "org-bullets" :local-repo "org-bullets")) "multiple-cursors" ("2024-06-01 06:10:09" ("cl-lib") (:type git :flavor melpa :host github :repo "magnars/multiple-cursors.el" :package "multiple-cursors" :local-repo "multiple-cursors.el")) "deft" ("2024-06-01 06:10:09" nil (:type git :flavor melpa :host github :repo "jrblevin/deft" :package "deft" :local-repo "deft")) "sketch-mode" ("2024-06-01 06:10:09" nil (:type git :host github :repo "emacs-straight/sketch-mode" :files ("*" (:exclude ".git")) :package "sketch-mode" :local-repo "sketch-mode")) "nano-emacs" ("2024-06-01 06:10:09" nil (:host github :repo "rougier/nano-emacs" :package "nano-emacs" :type git :local-repo "nano-emacs")) "all-the-icons" ("2024-06-01 06:09:37" ("emacs") (:type git :flavor melpa :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el" :package "all-the-icons" :local-repo "all-the-icons.el"))))
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2024-06-01 08:54:53" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2024-06-01 08:54:53" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2024-06-01 08:54:53" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "nongnu-elpa" ("2024-06-01 08:54:53" nil (:type git :repo "https://git.savannah.gnu.org/git/emacs/nongnu.git" :depth (full single-branch) :local-repo "nongnu-elpa" :build nil :package "nongnu-elpa")) "el-get" ("2024-06-01 08:54:53" nil (:type git :host github :repo "dimitri/el-get" :build nil :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :flavor melpa :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2024-06-01 08:54:53" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2024-06-01 08:54:53" ("emacs") (:type git :host github :repo "radian-software/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "use-package" ("2024-06-01 08:54:53" ("emacs" "bind-key") (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "bind-key" ("2024-06-01 08:54:53" ("emacs") (:flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :package "bind-key" :local-repo "use-package" :type git :repo "jwiegley/use-package" :host github)) "evil" ("2024-06-01 08:54:53" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2024-06-01 08:54:53" ("emacs") (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "doom-themes" ("2024-06-01 08:54:53" ("emacs" "cl-lib") (:type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes" :package "doom-themes" :local-repo "themes")) "doom-modeline" ("2024-06-01 08:54:53" ("emacs" "compat" "nerd-icons" "shrink-path") (:type git :flavor melpa :host github :repo "seagle0128/doom-modeline" :package "doom-modeline" :local-repo "doom-modeline")) "compat" ("2024-06-01 08:54:53" ("emacs" "seq") (:type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git")) :package "compat" :local-repo "compat")) "seq" ("2024-06-01 08:54:53" nil (:type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git")) :package "seq" :local-repo "seq")) "nerd-icons" ("2024-06-01 08:54:53" ("emacs") (:type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el" :package "nerd-icons" :local-repo "nerd-icons.el")) "shrink-path" ("2024-06-01 08:54:53" ("emacs" "s" "dash" "f") (:type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el" :package "shrink-path" :local-repo "shrink-path.el")) "s" ("2024-06-01 08:54:53" nil (:type git :flavor melpa :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "dash" ("2024-06-01 08:54:53" ("emacs") (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "f" ("2024-06-01 08:54:53" ("emacs" "s" "dash") (:type git :flavor melpa :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "nyan-mode" ("2024-06-01 08:54:53" ("emacs") (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "auctex" ("2024-06-01 08:54:53" ("emacs") (:type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git")) :package "auctex" :local-repo "auctex")) "org-roam" ("2024-06-01 08:54:53" ("emacs" "dash" "org" "emacsql" "magit-section") (:type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam" :package "org-roam" :local-repo "org-roam")) "org" ("2024-06-01 08:54:53" ("emacs") (:type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*")) :package "org")) "emacsql" ("2024-06-01 08:54:53" ("emacs") (:type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql" :package "emacsql" :local-repo "emacsql")) "magit-section" ("2024-06-01 08:54:53" ("emacs" "compat" "dash") (:type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit" :package "magit-section" :local-repo "magit")) "org-roam-ui" ("2024-06-01 08:54:53" ("emacs" "org-roam" "simple-httpd" "websocket") (:host github :repo "org-roam/org-roam-ui" :branch "main" :files ("*.el" "out") :flavor melpa :package "org-roam-ui" :type git :local-repo "org-roam-ui")) "simple-httpd" ("2024-06-01 08:54:53" ("cl-lib") (:type git :flavor melpa :host github :repo "skeeto/emacs-web-server" :package "simple-httpd" :local-repo "emacs-web-server")) "websocket" ("2024-06-01 08:54:53" ("cl-lib") (:type git :flavor melpa :host github :repo "ahyatt/emacs-websocket" :package "websocket" :local-repo "emacs-websocket")) "consult-org-roam" ("2024-06-01 08:54:53" ("emacs" "org-roam" "consult") (:type git :flavor melpa :host github :repo "jgru/consult-org-roam" :package "consult-org-roam" :local-repo "consult-org-roam")) "consult" ("2024-06-01 08:54:53" ("emacs" "compat") (:type git :flavor melpa :host github :repo "minad/consult" :package "consult" :local-repo "consult")) "org-bullets" ("2024-06-01 08:54:53" nil (:type git :flavor melpa :host github :repo "integral-dw/org-bullets" :package "org-bullets" :local-repo "org-bullets")) "multiple-cursors" ("2024-06-01 08:54:53" ("cl-lib") (:type git :flavor melpa :host github :repo "magnars/multiple-cursors.el" :package "multiple-cursors" :local-repo "multiple-cursors.el")) "deft" ("2024-06-01 08:54:53" nil (:type git :flavor melpa :host github :repo "jrblevin/deft" :package "deft" :local-repo "deft")) "sketch-mode" ("2024-06-01 08:54:53" nil (:type git :host github :repo "emacs-straight/sketch-mode" :files ("*" (:exclude ".git")) :package "sketch-mode" :local-repo "sketch-mode")) "nano-emacs" ("2024-06-01 07:28:50" nil (:host github :repo "rougier/nano-emacs" :package "nano-emacs" :type git :local-repo "nano-emacs")) "all-the-icons" ("2024-06-01 08:54:54" ("emacs") (:type git :flavor melpa :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el" :package "all-the-icons" :local-repo "all-the-icons.el")) "rainbow-delimiters" ("2024-06-01 08:54:54" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "parinfer" ("2024-06-01 07:51:30" ("dash" "cl-lib") (:type git :host github :repo "emacsattic/parinfer" :package "parinfer" :local-repo "parinfer")) "flycheck" ("2024-06-01 08:54:54" ("emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "yasnippet" ("2024-06-01 08:54:54" ("cl-lib" "emacs") (:type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet" :package "yasnippet" :local-repo "yasnippet")) "highlight-parentheses" ("2024-06-01 08:54:54" ("emacs") (:type git :flavor melpa :host sourcehut :repo "tsdh/highlight-parentheses.el" :package "highlight-parentheses" :local-repo "highlight-parentheses.el"))))
 
 #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-x straight-ert-print-hack straight-autoloads straight) (autoload 'straight-remove-unused-repos "straight" "Remove unused repositories from the repos and build directories.
 A repo is considered \"unused\" if it was not explicitly requested via
@@ -1691,10 +1691,363 @@ When PFX is non-nil, ignore the prompt and just install
 When Prefix ARG is non-nil, insert the propertized icon.
 When FAMILY is non-nil, limit the candidates to the icon set matching it.
 
-(fn &optional ARG FAMILY)" t) (register-definition-prefixes "all-the-icons" '("all-the-icons-")) (provide 'all-the-icons-autoloads))))
+(fn &optional ARG FAMILY)" t) (register-definition-prefixes "all-the-icons" '("all-the-icons-")) (provide 'all-the-icons-autoloads)) "rainbow-delimiters" ((rainbow-delimiters rainbow-delimiters-autoloads) (autoload 'rainbow-delimiters-mode "rainbow-delimiters" "Highlight nested parentheses, brackets, and braces according to their depth.
 
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 15 "melpa" nil "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "use-package" nil "bind-key" nil "evil" nil "goto-chg" nil "cl-lib" nil "doom-themes" nil "doom-modeline" nil "compat" nil "seq" nil "nerd-icons" nil "shrink-path" nil "s" nil "dash" nil "f" nil "nyan-mode" nil "auctex" nil "reftex" nil "org-roam" nil "org" (org :type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*"))) "emacsql" nil "magit-section" nil "org-roam-ui" nil "simple-httpd" nil "websocket" nil "consult-org-roam" nil "consult" nil "org-bullets" nil "multiple-cursors" nil "deft" nil "sketch-mode" nil "nano-emacs" nil "all-the-icons" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" (el-get :type git :flavor melpa :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "bind-key" (bind-key :type git :flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :host github :repo "jwiegley/use-package") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "cl-lib" nil "doom-themes" (doom-themes :type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes") "doom-modeline" (doom-modeline :type git :flavor melpa :host github :repo "seagle0128/doom-modeline") "compat" nil "seq" nil "nerd-icons" (nerd-icons :type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el") "shrink-path" (shrink-path :type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el") "s" (s :type git :flavor melpa :host github :repo "magnars/s.el") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :host github :repo "rejeep/f.el") "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode") "auctex" nil "reftex" nil "org-roam" (org-roam :type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam") "emacsql" (emacsql :type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql") "magit-section" (magit-section :type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit") "org-roam-ui" (org-roam-ui :type git :flavor melpa :files (:defaults "out" "org-roam-ui-pkg.el") :host github :repo "org-roam/org-roam-ui") "simple-httpd" (simple-httpd :type git :flavor melpa :host github :repo "skeeto/emacs-web-server") "websocket" (websocket :type git :flavor melpa :host github :repo "ahyatt/emacs-websocket") "consult-org-roam" (consult-org-roam :type git :flavor melpa :host github :repo "jgru/consult-org-roam") "consult" (consult :type git :flavor melpa :host github :repo "minad/consult") "org-bullets" (org-bullets :type git :flavor melpa :host github :repo "integral-dw/org-bullets") "multiple-cursors" (multiple-cursors :type git :flavor melpa :host github :repo "magnars/multiple-cursors.el") "deft" (deft :type git :flavor melpa :host github :repo "jrblevin/deft") "sketch-mode" nil "nano-emacs" nil "all-the-icons" (all-the-icons :type git :flavor melpa :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "nongnu-elpa" nil "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "compat" (compat :type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git"))) "seq" (seq :type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git"))) "auctex" (auctex :type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git"))) "reftex" nil "sketch-mode" (sketch-mode :type git :host github :repo "emacs-straight/sketch-mode" :files ("*" (:exclude ".git"))) "nano-emacs" nil)) nongnu-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 4 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "reftex" nil "nano-emacs" nil)) el-get #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "reftex" nil "nano-emacs" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "reftex" nil "nano-emacs" nil))))
+This is a minor mode.  If called interactively, toggle the
+`Rainbow-Delimiters mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
 
-("nano-emacs" "sketch-mode" "deft" "multiple-cursors" "org-bullets" "consult" "consult-org-roam" "websocket" "simple-httpd" "org-roam-ui" "magit-section" "emacsql" "org" "org-roam" "reftex" "auctex" "nyan-mode" "f" "dash" "s" "shrink-path" "nerd-icons" "seq" "compat" "doom-modeline" "doom-themes" "cl-lib" "goto-chg" "evil" "bind-key" "use-package" "emacs" "straight" "emacsmirror-mirror" "el-get" "nongnu-elpa" "gnu-elpa-mirror" "melpa" "org-elpa")
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `rainbow-delimiters-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t) (autoload 'rainbow-delimiters-mode-enable "rainbow-delimiters" "Enable `rainbow-delimiters-mode'.") (autoload 'rainbow-delimiters-mode-disable "rainbow-delimiters" "Disable `rainbow-delimiters-mode'.") (register-definition-prefixes "rainbow-delimiters" '("rainbow-delimiters-")) (provide 'rainbow-delimiters-autoloads)) "parinfer" ((parinfer parinfer-autoloads parinferlib parinfer-ext) (autoload 'parinfer-mode "parinfer" "Parinfer mode.
+
+This is a minor mode.  If called interactively, toggle the
+`Parinfer mode' mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `parinfer-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t) (autoload 'parinfer-region-mode "parinfer" "Available when region is active.
+
+This is a minor mode.  If called interactively, toggle the
+`Parinfer-Region mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `parinfer-region-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t) (register-definition-prefixes "parinfer" '("parinfer-")) (register-definition-prefixes "parinfer-ext" '("parinfer-")) (register-definition-prefixes "parinferlib" '("parinferlib-")) (provide 'parinfer-autoloads)) "flycheck" ((flycheck-ert flycheck flycheck-autoloads flycheck-buttercup) (autoload 'flycheck-manual "flycheck" "Open the Flycheck manual." t) (autoload 'flycheck-quick-help "flycheck" "Display brief Flycheck help." t) (autoload 'flycheck-mode "flycheck" "Flycheck is a minor mode for on-the-fly syntax checking.
+
+In `flycheck-mode' the buffer is automatically syntax-checked
+using the first suitable syntax checker from `flycheck-checkers'.
+Use `flycheck-select-checker' to select a checker for the current
+buffer manually.
+
+If you run into issues, use `\\[flycheck-verify-setup]' to get help.
+
+Flycheck supports many languages out of the box, and many
+additional ones are available on MELPA.  Adding new ones is very
+easy.  Complete documentation is available online at URL
+`https://www.flycheck.org/en/latest/'.  Please report issues and
+request features at URL `https://github.com/flycheck/flycheck'.
+
+Flycheck displays its status in the mode line.  In the default
+configuration, it looks like this:
+
+`FlyC'     This buffer has not been checked yet.
+`FlyC*'    Flycheck is running.  Expect results soon!
+`FlyC:0'   Last check resulted in no errors and no warnings.
+`FlyC:3|5' This buffer contains three errors and five warnings.
+           Use `\\[flycheck-list-errors]' to see the list.
+`FlyC-'    Flycheck doesn't have a checker for this buffer.
+
+You may also see the following icons:
+`FlyC!'    The checker crashed.
+`FlyC.'    The last syntax check was manually interrupted.
+`FlyC?'    The checker did something unexpected, like exiting with 1
+           but returning no errors.
+
+The following keybindings are available in `flycheck-mode':
+
+\\{flycheck-mode-map}
+(you can change the prefix by customizing
+`flycheck-keymap-prefix')
+
+If called interactively, enable Flycheck mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is ‘toggle’; disable the mode otherwise.
+
+(fn &optional ARG)" t) (put 'global-flycheck-mode 'globalized-minor-mode t) (defvar global-flycheck-mode nil "Non-nil if Global Flycheck mode is enabled.
+See the `global-flycheck-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-flycheck-mode'.") (custom-autoload 'global-flycheck-mode "flycheck" nil) (autoload 'global-flycheck-mode "flycheck" "Toggle Flycheck mode in all buffers.
+With prefix ARG, enable Global Flycheck mode if ARG is positive;
+otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Flycheck mode is enabled in all buffers where `flycheck-mode-on-safe'
+would do it.
+
+See `flycheck-mode' for more information on Flycheck mode.
+
+(fn &optional ARG)" t) (autoload 'flycheck-define-error-level "flycheck" "Define a new error LEVEL with PROPERTIES.
+
+The following PROPERTIES constitute an error level:
+
+`:severity SEVERITY'
+     A number denoting the severity of this level.  The higher
+     the number, the more severe is this level compared to other
+     levels.  Defaults to 0; info is -10, warning is 10, and
+     error is 100.
+
+     The severity is used by `flycheck-error-level-<' to
+     determine the ordering of errors according to their levels.
+
+`:compilation-level LEVEL'
+
+     A number indicating the broad class of messages that errors
+     at this level belong to: one of 0 (info), 1 (warning), or
+     2 or nil (error).  Defaults to nil.
+
+     This is used by `flycheck-checker-pattern-to-error-regexp'
+     to map error levels into `compilation-mode''s hierarchy and
+     to get proper highlighting of errors in `compilation-mode'.
+
+`:overlay-category CATEGORY'
+     A symbol denoting the overlay category to use for error
+     highlight overlays for this level.  See Info
+     node `(elisp)Overlay Properties' for more information about
+     overlay categories.
+
+     A category for an error level overlay should at least define
+     the `face' property, for error highlighting.  Another useful
+     property for error level categories is `priority', to
+     influence the stacking of multiple error level overlays.
+
+`:fringe-bitmap BITMAPS'
+     A fringe bitmap symbol denoting the bitmap to use for fringe
+     indicators for this level, or a cons of two bitmaps (one for
+     narrow fringes and one for wide fringes).  See Info node
+     `(elisp)Fringe Bitmaps' for more information about fringe
+     bitmaps, including a list of built-in fringe bitmaps.
+
+`:fringe-face FACE'
+     A face symbol denoting the face to use for fringe indicators
+     for this level.
+
+`:margin-spec SPEC'
+     A display specification indicating what to display in the
+     margin when `flycheck-indication-mode' is `left-margin' or
+     `right-margin'.  See Info node `(elisp)Displaying in the
+     Margins'.  If omitted, Flycheck generates an image spec from
+     the fringe bitmap.
+
+`:error-list-face FACE'
+     A face symbol denoting the face to use for messages of this
+     level in the error list.  See `flycheck-list-errors'.
+
+(fn LEVEL &rest PROPERTIES)") (function-put 'flycheck-define-error-level 'lisp-indent-function 1) (autoload 'flycheck-define-command-checker "flycheck" "Define SYMBOL as syntax checker to run a command.
+
+Define SYMBOL as generic syntax checker via
+`flycheck-define-generic-checker', which uses an external command
+to check the buffer.  SYMBOL and DOCSTRING are the same as for
+`flycheck-define-generic-checker'.
+
+In addition to the properties understood by
+`flycheck-define-generic-checker', the following PROPERTIES
+constitute a command syntax checker.  Unless otherwise noted, all
+properties are mandatory.  Note that the default `:error-filter'
+of command checkers is `flycheck-sanitize-errors'.
+
+`:command COMMAND'
+     The command to run for syntax checking.
+
+     COMMAND is a list of the form `(EXECUTABLE [ARG ...])'.
+
+     EXECUTABLE is a string with the executable of this syntax
+     checker.  It can be overridden with the variable
+     `flycheck-SYMBOL-executable'.  Note that this variable is
+     NOT implicitly defined by this function.  Use
+     `flycheck-def-executable-var' to define this variable.
+
+     Each ARG is an argument to the executable, either as string,
+     or as special symbol or form for
+     `flycheck-substitute-argument', which see.
+
+`:error-patterns PATTERNS'
+     A list of patterns to parse the output of the `:command'.
+
+     Each ITEM in PATTERNS is a list `(LEVEL SEXP ...)', where
+     LEVEL is a Flycheck error level (see
+     `flycheck-define-error-level'), followed by one or more RX
+     `SEXP's which parse an error of that level and extract line,
+     column, file name and the message.
+
+     See `rx' for general information about RX, and
+     `flycheck-rx-to-string' for some special RX forms provided
+     by Flycheck.
+
+     All patterns are applied in the order of declaration to the
+     whole output of the syntax checker.  Output already matched
+     by a pattern will not be matched by subsequent patterns.  In
+     other words, the first pattern wins.
+
+     This property is optional.  If omitted, however, an
+     `:error-parser' is mandatory.
+
+`:error-parser FUNCTION'
+     A function to parse errors with.
+
+     The function shall accept three arguments OUTPUT CHECKER
+     BUFFER.  OUTPUT is the syntax checker output as string,
+     CHECKER the syntax checker that was used, and BUFFER a
+     buffer object representing the checked buffer.  The function
+     must return a list of `flycheck-error' objects parsed from
+     OUTPUT.
+
+     This property is optional.  If omitted, it defaults to
+     `flycheck-parse-with-patterns'.  In this case,
+     `:error-patterns' is mandatory.
+
+`:standard-input t'
+     Whether to send the buffer contents on standard input.
+
+     If this property is given and has a non-nil value, send the
+     contents of the buffer on standard input.
+
+     Defaults to nil.
+
+Note that you may not give `:start', `:interrupt', and
+`:print-doc' for a command checker.  You can give a custom
+`:verify' function, though, whose results will be appended to the
+default `:verify' function of command checkers.
+
+(fn SYMBOL DOCSTRING &rest PROPERTIES)") (function-put 'flycheck-define-command-checker 'lisp-indent-function 1) (function-put 'flycheck-define-command-checker 'doc-string-elt 2) (autoload 'flycheck-def-config-file-var "flycheck" "Define SYMBOL as config file variable for CHECKER, with default FILE-NAME.
+
+SYMBOL is declared as customizable variable using `defcustom', to
+provide configuration files for the given syntax CHECKER.
+CUSTOM-ARGS are forwarded to `defcustom'.
+
+FILE-NAME is the initial value of the new variable.  If omitted,
+the default value is nil.  It can be either a string or a list of
+strings.
+
+Use this together with the `config-file' form in the `:command'
+argument to `flycheck-define-checker'.
+
+(fn SYMBOL CHECKER &optional FILE-NAME &rest CUSTOM-ARGS)" nil t) (function-put 'flycheck-def-config-file-var 'lisp-indent-function 3) (autoload 'flycheck-def-option-var "flycheck" "Define SYMBOL as option variable with INIT-VALUE for CHECKER.
+
+SYMBOL is declared as customizable variable using `defcustom', to
+provide an option for the given syntax CHECKERS (a checker or a
+list of checkers).  INIT-VALUE is the initial value of the
+variable, and DOCSTRING is its docstring.  CUSTOM-ARGS are
+forwarded to `defcustom'.
+
+Use this together with the `option', `option-list' and
+`option-flag' forms in the `:command' argument to
+`flycheck-define-checker'.
+
+(fn SYMBOL INIT-VALUE CHECKERS DOCSTRING &rest CUSTOM-ARGS)" nil t) (function-put 'flycheck-def-option-var 'lisp-indent-function 3) (function-put 'flycheck-def-option-var 'doc-string-elt 4) (autoload 'flycheck-define-checker "flycheck" "Define SYMBOL as command syntax checker with DOCSTRING and PROPERTIES.
+
+Like `flycheck-define-command-checker', but PROPERTIES must not
+be quoted.  Also, implicitly define the executable variable for
+SYMBOL with `flycheck-def-executable-var'.
+
+(fn SYMBOL DOCSTRING &rest PROPERTIES)" nil t) (function-put 'flycheck-define-checker 'lisp-indent-function 1) (function-put 'flycheck-define-checker 'doc-string-elt 2) (register-definition-prefixes "flycheck" '("flycheck-" "help-flycheck-checker-d" "list-flycheck-errors")) (register-definition-prefixes "flycheck-buttercup" '("flycheck-buttercup-format-error-list")) (register-definition-prefixes "flycheck-ert" '("flycheck-er")) (provide 'flycheck-autoloads)) "yasnippet" ((yasnippet-autoloads yasnippet) (autoload 'yas-minor-mode "yasnippet" "Toggle YASnippet mode.
+
+When YASnippet mode is enabled, `yas-expand', normally bound to
+the TAB key, expands snippets of code depending on the major
+mode.
+
+With no argument, this command toggles the mode.
+positive prefix argument turns on the mode.
+Negative prefix argument turns off the mode.
+
+Key bindings:
+\\{yas-minor-mode-map}
+
+This is a minor mode.  If called interactively, toggle the `yas
+minor mode' mode.  If the prefix argument is positive, enable the
+mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `yas-minor-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t) (put 'yas-global-mode 'globalized-minor-mode t) (defvar yas-global-mode nil "Non-nil if Yas-Global mode is enabled.
+See the `yas-global-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `yas-global-mode'.") (custom-autoload 'yas-global-mode "yasnippet" nil) (autoload 'yas-global-mode "yasnippet" "Toggle Yas minor mode in all buffers.
+With prefix ARG, enable Yas-Global mode if ARG is positive; otherwise,
+disable it.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Yas minor mode is enabled in all buffers where `yas-minor-mode-on'
+would do it.
+
+See `yas-minor-mode' for more information on Yas minor mode.
+
+(fn &optional ARG)" t) (autoload 'snippet-mode "yasnippet" "A mode for editing yasnippets" t nil) (register-definition-prefixes "yasnippet" '("help-snippet-def" "snippet-mode-map" "yas")) (provide 'yasnippet-autoloads)) "highlight-parentheses" ((highlight-parentheses highlight-parentheses-autoloads) (autoload 'highlight-parentheses-mode "highlight-parentheses" "Minor mode to highlight the surrounding parentheses.
+
+This is a minor mode.  If called interactively, toggle the
+`Highlight-Parentheses mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `highlight-parentheses-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t) (put 'global-highlight-parentheses-mode 'globalized-minor-mode t) (defvar global-highlight-parentheses-mode nil "Non-nil if Global Highlight-Parentheses mode is enabled.
+See the `global-highlight-parentheses-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-highlight-parentheses-mode'.") (custom-autoload 'global-highlight-parentheses-mode "highlight-parentheses" nil) (autoload 'global-highlight-parentheses-mode "highlight-parentheses" "Toggle Highlight-Parentheses mode in all buffers.
+With prefix ARG, enable Global Highlight-Parentheses mode if ARG is
+positive; otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Highlight-Parentheses mode is enabled in all buffers where `(lambda
+nil (highlight-parentheses-mode 1))' would do it.
+
+See `highlight-parentheses-mode' for more information on
+Highlight-Parentheses mode.
+
+(fn &optional ARG)" t) (register-definition-prefixes "highlight-parentheses" '("highlight-parentheses-" "hl-paren-face")) (provide 'highlight-parentheses-autoloads))))
+
+#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 15 "melpa" nil "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "use-package" nil "bind-key" nil "evil" nil "goto-chg" nil "cl-lib" nil "doom-themes" nil "doom-modeline" nil "compat" nil "seq" nil "nerd-icons" nil "shrink-path" nil "s" nil "dash" nil "f" nil "nyan-mode" nil "auctex" nil "reftex" nil "org-roam" nil "org" (org :type git :repo "https://git.savannah.gnu.org/git/emacs/org-mode.git" :local-repo "org" :depth full :pre-build (straight-recipes-org-elpa--build) :build (:not autoloads) :files (:defaults "lisp/*.el" ("etc/styles/" "etc/styles/*"))) "emacsql" nil "magit-section" nil "org-roam-ui" nil "simple-httpd" nil "websocket" nil "consult-org-roam" nil "consult" nil "org-bullets" nil "multiple-cursors" nil "deft" nil "sketch-mode" nil "nano-emacs" nil "all-the-icons" nil "rainbow-delimiters" nil "parinfer" nil "flycheck" nil "yasnippet" nil "highlight-parentheses" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" (el-get :type git :flavor melpa :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "bind-key" (bind-key :type git :flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :host github :repo "jwiegley/use-package") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "cl-lib" nil "doom-themes" (doom-themes :type git :flavor melpa :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes") "doom-modeline" (doom-modeline :type git :flavor melpa :host github :repo "seagle0128/doom-modeline") "compat" nil "seq" nil "nerd-icons" (nerd-icons :type git :flavor melpa :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el") "shrink-path" (shrink-path :type git :flavor melpa :host gitlab :repo "bennya/shrink-path.el") "s" (s :type git :flavor melpa :host github :repo "magnars/s.el") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :host github :repo "rejeep/f.el") "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode") "auctex" nil "reftex" nil "org-roam" (org-roam :type git :flavor melpa :files (:defaults "extensions/*" "org-roam-pkg.el") :host github :repo "org-roam/org-roam") "emacsql" (emacsql :type git :flavor melpa :files (:defaults "sqlite" "emacsql-pkg.el") :host github :repo "magit/emacsql") "magit-section" (magit-section :type git :flavor melpa :files ("lisp/magit-section.el" "lisp/magit-section-pkg.el" "docs/magit-section.texi" "Documentation/magit-section.texi" "magit-section-pkg.el") :host github :repo "magit/magit") "org-roam-ui" (org-roam-ui :type git :flavor melpa :files (:defaults "out" "org-roam-ui-pkg.el") :host github :repo "org-roam/org-roam-ui") "simple-httpd" (simple-httpd :type git :flavor melpa :host github :repo "skeeto/emacs-web-server") "websocket" (websocket :type git :flavor melpa :host github :repo "ahyatt/emacs-websocket") "consult-org-roam" (consult-org-roam :type git :flavor melpa :host github :repo "jgru/consult-org-roam") "consult" (consult :type git :flavor melpa :host github :repo "minad/consult") "org-bullets" (org-bullets :type git :flavor melpa :host github :repo "integral-dw/org-bullets") "multiple-cursors" (multiple-cursors :type git :flavor melpa :host github :repo "magnars/multiple-cursors.el") "deft" (deft :type git :flavor melpa :host github :repo "jrblevin/deft") "sketch-mode" nil "nano-emacs" nil "all-the-icons" (all-the-icons :type git :flavor melpa :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "parinfer" nil "flycheck" (flycheck :type git :flavor melpa :host github :repo "flycheck/flycheck") "yasnippet" (yasnippet :type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet") "highlight-parentheses" (highlight-parentheses :type git :flavor melpa :host sourcehut :repo "tsdh/highlight-parentheses.el"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "nongnu-elpa" nil "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "compat" (compat :type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git"))) "seq" (seq :type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git"))) "auctex" (auctex :type git :host github :repo "emacs-straight/auctex" :files ("*" (:exclude ".git"))) "reftex" nil "sketch-mode" (sketch-mode :type git :host github :repo "emacs-straight/sketch-mode" :files ("*" (:exclude ".git"))) "nano-emacs" nil "parinfer" nil)) nongnu-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 4 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "reftex" nil "nano-emacs" nil "parinfer" nil)) el-get #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "reftex" nil "nano-emacs" nil "parinfer" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "reftex" nil "nano-emacs" nil "parinfer" (parinfer :type git :host github :repo "emacsattic/parinfer")))))
+
+("highlight-parentheses" "yasnippet" "flycheck" "rainbow-delimiters" "all-the-icons" "sketch-mode" "deft" "multiple-cursors" "org-bullets" "consult" "consult-org-roam" "websocket" "simple-httpd" "org-roam-ui" "magit-section" "emacsql" "org" "org-roam" "reftex" "auctex" "nyan-mode" "f" "dash" "s" "shrink-path" "nerd-icons" "seq" "compat" "doom-modeline" "doom-themes" "cl-lib" "goto-chg" "evil" "bind-key" "use-package" "emacs" "straight" "emacsmirror-mirror" "el-get" "nongnu-elpa" "gnu-elpa-mirror" "melpa" "org-elpa")
 
 t

@@ -3,6 +3,7 @@
 (scroll-bar-mode -1)           ; Hide the always-visible scrollbar
 (setq inhibit-splash-screen t) ; Remove the "Welcome to GNU Emacs" splash screen
 (setq use-file-dialog nil)      ; Ask for textual confirmation instead of GUI
+(load   "~/.emacs.d/API_KEYS.el")
 
 ;; fix open window
 ;;(use-package emacs
@@ -606,6 +607,35 @@
 (insert (all-the-icons-icon-for-file "foo.js"))
 
 ;; env bound
-(load   "~/.emacs.d/API_KEYS.el")
 (setenv "G" "/home/saint/code/shell/gpts.sh")
 (setenv "g" "/home/saint/code/shell/gpts.sh")
+
+;; 彩色lisp括号
+     (use-package rainbow-delimiters
+       :ensure t
+       :hook ((emacs-lisp-mode lisp-mode lisp-interaction-mode) . rainbow-delimiters-mode))
+
+;; 语法检查
+     (use-package flycheck
+       :ensure t
+       :init (global-flycheck-mode))
+
+;; 代码插入
+     (use-package yasnippet
+       :ensure t
+       :config
+       (yas-global-mode 1))
+(require 'common-lisp-snippets)
+
+;; 高亮括号
+     (use-package highlight-parentheses
+       :ensure t
+       :hook ((emacs-lisp-mode lisp-mode lisp-interaction-mode) . highlight-parentheses-mode))
+
+;; 自动右括号
+  (require 'adjust-parens)
+  (add-hook 'emacs-lisp-mode-hook #'adjust-parens-mode)
+  (add-hook 'clojure-mode-hook #'adjust-parens-mode)
+  (global-set-key (kbd "C-<return>") 'lisp-indent-adjust-parens)
+  (global-set-key (kbd "M-<return>") 'lisp-dedent-adjust-parens)
+
