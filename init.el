@@ -209,6 +209,12 @@
 (setq inferior-lisp-program "/usr/bin/sbcl --dynamic-space-size 8Gb  ")
 (add-hook 'lisp-mode-hook 'sly-editing-mode)
 
+;; 使用LispWorks
+;(ql:quickload "swank")
+;(load "~/.emacs.d/elpa/slime-20xx/swank-loader.lisp")
+;(load "/home/saint/.slime/fasl/2.28/sbcl-2.4.5-linux-x86-64/home/saint/.quicklisp/dists/quicklisp/software/slime-v2.28/contrib/swank-quicklisp.fasl")
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 插件库
 ;;
@@ -243,7 +249,7 @@
  '(custom-safe-themes
    '("774218d0781ca9aad07888de412eac35b7920bafc10ecc014ecf493d7a74b310" "b754d3a03c34cfba9ad7991380d26984ebd0761925773530e24d8dd8b6894738" "f5f80dd6588e59cfc3ce2f11568ff8296717a938edd448a947f9823a4e282b66" "4990532659bb6a285fee01ede3dfa1b1bdf302c5c3c8de9fad9b6bc63a9252f7" "6f1f6a1a3cff62cc860ad6e787151b9b8599f4471d40ed746ea2819fcd184e1a" "014cb63097fc7dbda3edf53eb09802237961cbb4c9e9abd705f23b86511b0a69" "b5fd9c7429d52190235f2383e47d340d7ff769f141cd8f9e7a4629a81abc6b19" "b30ab3b30e70f4350dad6bfe27366d573ace2190cc405c619bd5e602110c6e0c" "317b5f321d72b4ff9c465ceb343758c23b2a9465df33929accea63f414cedbaa" default))
  '(ignored-local-variable-values '((TeX-master . t)))
- '(org-agenda-files '("~/ywq_doc/journals/2024-03-16.org"))
+ '(org-agenda-files '("~/ywq_doc/journals/2024_03_16.org"))
  '(org-capture-templates
    '(("C-i" "Todo" entry
       (file+headline "/home/saint/ywq_doc/todo.txt/todo.txt" "Tasks")
@@ -530,7 +536,7 @@
 (defun my-start-snow ()
    "Start snow if not already started."
   (unless (timerp my-snow-timer)
-    (setq my-snow-timer (run-with-idle-timer 120 t 'snow))))
+    (setq my-snow-timer (run-with-idle-timer 300 t 'snow))))
 
 (defun my-stop-snow ()
    "Stop snow if running."

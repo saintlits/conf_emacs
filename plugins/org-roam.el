@@ -96,7 +96,7 @@ Search for only document level nodes. Exclude dates."
                                       ;; could use
                                       ;; (file (concat org-directory "/org-roam/personal/templates/personal.org"))
 	                              :if-new (file+head "pages/${slug}.org"
-                                                         "#+title: ${title}\n#+date: %<%Y-%m-%d %a %R>\n#+startup: showall\n\n")
+                                                         "#+title: ${title}\n#+date: %<%Y_%m_%d %a %R>\n#+startup: showall\n\n")
                                       :immediate-finish t
                                       :empty-lines 1
 	                              :unnarrowed t)
@@ -104,7 +104,7 @@ Search for only document level nodes. Exclude dates."
                                      ("c" "Contacts"
                                       plain "%?"
                                       :if-new (file+head "pages/contacts/${slug}.org"
-                                                         "#+title: ${title}\n#+date: %<%Y-%m-%d %a %R>\n#+filetags: contacts\n#+startup: showall\n\n")
+                                                         "#+title: ${title}\n#+date: %<%Y_%m_%d %a %R>\n#+filetags: contacts\n#+startup: showall\n\n")
                                       :immediate-finish t
                                       :empty-lines 1
                                       :unnarrowed t)
@@ -112,22 +112,22 @@ Search for only document level nodes. Exclude dates."
                                      ("m" "Emacs related notes"
                                       plain "%?"
                                       :if-new (file+head "emacs/${slug}.org"
-                                                         "#+title: ${title}\n#+date: %<%Y-%m-%d %a %R>\n#+filetags: emacs\n#+startup: content\n")
+                                                         "#+title: ${title}\n#+date: %<%Y_%m_%d %a %R>\n#+filetags: emacs\n#+startup: content\n")
                                       :empty-lines 1
                                       :unnarrowed t)
 
                                      ("w" "work notes"
                                       plain "%?"
                                       :if-new (file+head "work/${slug}.org"
-                                                         "#+title: ${title}\n#+date: %<%Y-%m-%d %a %R>\n#+updated: \n\n")
+                                                         "#+title: ${title}\n#+date: %<%Y_%m_%d %a %R>\n#+updated: \n\n")
                                       :immediate-finish t
                                       :empty-lines 1
                                       :unnarrowed t))
         time-stamp-start "#\\+updated: [\t]*")
   (setq org-roam-dailies-capture-templates  '(("d" "default" entry
                                                  "\n* %<%H:%M> %?\n:properties:\n:created: %U\n:end:\n"
-                                                 :target  (file+head "%<%Y-%m-%d>.org"
-                                                                     "#+title: %<%Y-%m-%d>\n#+startup: showall\n")
+                                                 :target  (file+head "%<%Y_%m_%d>.org"
+                                                                     "#+title: %<%Y_%m_%d>\n#+startup: showall\n")
                                                  ;;:unnarrowed t
                                                  ;;:jump-to-captured t
                                                  :empty-lines 1
@@ -179,8 +179,8 @@ Search for only document level nodes. Exclude dates."
   ;; (setq org-roam-capture-templates
   ;;       '(("p" "personal" plain
   ;;          (function org-roam--capture-get-point) "%?"
-  ;;          :file-name "personal/%<%Y-%m-%dT%H%M%S>"
-  ;;          :head "---\ntitle: ${title}\nid: %<%Y-%m-%dT%H%M%S.%6N">\nmodified: <>\n---\n"
+  ;;          :file-name "personal/%<%Y_%m_%dT%H%M%S>"
+  ;;          :head "---\ntitle: ${title}\nid: %<%Y_%m_%dT%H%M%S.%6N">\nmodified: <>\n---\n"
   ;;          :unnarrowed t)))
   (org-roam-db-autosync-mode)
   ;; If using org-roam-protocol
